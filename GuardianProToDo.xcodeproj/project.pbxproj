@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		27478CB52817F1A7001D73A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CB42817F1A7001D73A7 /* AppDelegate.swift */; };
-		27478CB72817F1A7001D73A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CB62817F1A7001D73A7 /* SceneDelegate.swift */; };
 		27478CB92817F1A7001D73A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CB82817F1A7001D73A7 /* ViewController.swift */; };
 		27478CBC2817F1A7001D73A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27478CBA2817F1A7001D73A7 /* Main.storyboard */; };
 		27478CBE2817F1A9001D73A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27478CBD2817F1A9001D73A7 /* Assets.xcassets */; };
@@ -16,6 +15,36 @@
 		27478CCC2817F1AA001D73A7 /* GuardianProToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CCB2817F1AA001D73A7 /* GuardianProToDoTests.swift */; };
 		27478CD62817F1AA001D73A7 /* GuardianProToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CD52817F1AA001D73A7 /* GuardianProToDoUITests.swift */; };
 		27478CD82817F1AA001D73A7 /* GuardianProToDoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CD72817F1AA001D73A7 /* GuardianProToDoUITestsLaunchTests.swift */; };
+		27478CFB2817F697001D73A7 /* BViperModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CEA2817F697001D73A7 /* BViperModuleInterface.swift */; };
+		27478CFC2817F697001D73A7 /* BViperInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CED2817F697001D73A7 /* BViperInteractorInterface.swift */; };
+		27478CFD2817F697001D73A7 /* BViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CEE2817F697001D73A7 /* BViperInteractor.swift */; };
+		27478CFE2817F697001D73A7 /* BViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CF12817F697001D73A7 /* BViperPresenter.swift */; };
+		27478CFF2817F697001D73A7 /* BViperWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CF32817F697001D73A7 /* BViperWireframe.swift */; };
+		27478D002817F697001D73A7 /* BViperWireFrameInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CF42817F697001D73A7 /* BViperWireFrameInterface.swift */; };
+		27478D012817F697001D73A7 /* BViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CF62817F697001D73A7 /* BViperViewController.swift */; };
+		27478D022817F697001D73A7 /* BViperViewControllerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CF72817F697001D73A7 /* BViperViewControllerInterface.swift */; };
+		27478D032817F697001D73A7 /* BTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27478CF92817F697001D73A7 /* BTableViewController.xib */; };
+		27478D042817F697001D73A7 /* BTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CFA2817F697001D73A7 /* BTableViewController.swift */; };
+		27478D172817F781001D73A7 /* MainViperModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D092817F781001D73A7 /* MainViperModuleInterface.swift */; };
+		27478D182817F781001D73A7 /* MainViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D0C2817F781001D73A7 /* MainViperInteractor.swift */; };
+		27478D192817F781001D73A7 /* MainViperInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D0D2817F781001D73A7 /* MainViperInteractorInterface.swift */; };
+		27478D1A2817F781001D73A7 /* MainViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D102817F781001D73A7 /* MainViperPresenter.swift */; };
+		27478D1B2817F781001D73A7 /* MainViperWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D122817F781001D73A7 /* MainViperWireframeInterface.swift */; };
+		27478D1C2817F781001D73A7 /* MainViperWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D132817F781001D73A7 /* MainViperWireframe.swift */; };
+		27478D1D2817F781001D73A7 /* MainViperViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D152817F781001D73A7 /* MainViperViewInterface.swift */; };
+		27478D1E2817F781001D73A7 /* MainViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D162817F781001D73A7 /* MainViperViewController.swift */; };
+		27478D282817F7AA001D73A7 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D202817F7AA001D73A7 /* ServiceManager.swift */; };
+		27478D292817F7AA001D73A7 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D212817F7AA001D73A7 /* NavigationManager.swift */; };
+		27478D2A2817F7AA001D73A7 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D222817F7AA001D73A7 /* UIManager.swift */; };
+		27478D2B2817F7AA001D73A7 /* ResponseBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D242817F7AA001D73A7 /* ResponseBaseModel.swift */; };
+		27478D2D2817F7AA001D73A7 /* ViewObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D272817F7AA001D73A7 /* ViewObjectModel.swift */; };
+		27478D342817F7BA001D73A7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D2F2817F7BA001D73A7 /* Constant.swift */; };
+		27478D352817F7BA001D73A7 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D322817F7BA001D73A7 /* TableViewCellModel.swift */; };
+		27478D362817F7BA001D73A7 /* BBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D332817F7BA001D73A7 /* BBaseTableViewCell.swift */; };
+		27478D402817FEFC001D73A7 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D382817FEFC001D73A7 /* ApiError.swift */; };
+		27478D422817FEFC001D73A7 /* EventsEndpointHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */; };
+		27478D432817FEFC001D73A7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */; };
+		27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +67,6 @@
 /* Begin PBXFileReference section */
 		27478CB12817F1A7001D73A7 /* GuardianProToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardianProToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27478CB42817F1A7001D73A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27478CB62817F1A7001D73A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		27478CB82817F1A7001D73A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27478CBB2817F1A7001D73A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27478CBD2817F1A9001D73A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +77,36 @@
 		27478CD12817F1AA001D73A7 /* GuardianProToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuardianProToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27478CD52817F1AA001D73A7 /* GuardianProToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianProToDoUITests.swift; sourceTree = "<group>"; };
 		27478CD72817F1AA001D73A7 /* GuardianProToDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianProToDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27478CEA2817F697001D73A7 /* BViperModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperModuleInterface.swift; sourceTree = "<group>"; };
+		27478CED2817F697001D73A7 /* BViperInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperInteractorInterface.swift; sourceTree = "<group>"; };
+		27478CEE2817F697001D73A7 /* BViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperInteractor.swift; sourceTree = "<group>"; };
+		27478CF12817F697001D73A7 /* BViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperPresenter.swift; sourceTree = "<group>"; };
+		27478CF32817F697001D73A7 /* BViperWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperWireframe.swift; sourceTree = "<group>"; };
+		27478CF42817F697001D73A7 /* BViperWireFrameInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperWireFrameInterface.swift; sourceTree = "<group>"; };
+		27478CF62817F697001D73A7 /* BViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperViewController.swift; sourceTree = "<group>"; };
+		27478CF72817F697001D73A7 /* BViperViewControllerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViperViewControllerInterface.swift; sourceTree = "<group>"; };
+		27478CF92817F697001D73A7 /* BTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTableViewController.xib; sourceTree = "<group>"; };
+		27478CFA2817F697001D73A7 /* BTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTableViewController.swift; sourceTree = "<group>"; };
+		27478D092817F781001D73A7 /* MainViperModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperModuleInterface.swift; sourceTree = "<group>"; };
+		27478D0C2817F781001D73A7 /* MainViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperInteractor.swift; sourceTree = "<group>"; };
+		27478D0D2817F781001D73A7 /* MainViperInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperInteractorInterface.swift; sourceTree = "<group>"; };
+		27478D102817F781001D73A7 /* MainViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperPresenter.swift; sourceTree = "<group>"; };
+		27478D122817F781001D73A7 /* MainViperWireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperWireframeInterface.swift; sourceTree = "<group>"; };
+		27478D132817F781001D73A7 /* MainViperWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperWireframe.swift; sourceTree = "<group>"; };
+		27478D152817F781001D73A7 /* MainViperViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperViewInterface.swift; sourceTree = "<group>"; };
+		27478D162817F781001D73A7 /* MainViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViperViewController.swift; sourceTree = "<group>"; };
+		27478D202817F7AA001D73A7 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		27478D212817F7AA001D73A7 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		27478D222817F7AA001D73A7 /* UIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		27478D242817F7AA001D73A7 /* ResponseBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseBaseModel.swift; sourceTree = "<group>"; };
+		27478D272817F7AA001D73A7 /* ViewObjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewObjectModel.swift; sourceTree = "<group>"; };
+		27478D2F2817F7BA001D73A7 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		27478D322817F7BA001D73A7 /* TableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		27478D332817F7BA001D73A7 /* BBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBaseTableViewCell.swift; sourceTree = "<group>"; };
+		27478D382817FEFC001D73A7 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsEndpointHandler.swift; sourceTree = "<group>"; };
+		27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +157,14 @@
 		27478CB32817F1A7001D73A7 /* GuardianProToDo */ = {
 			isa = PBXGroup;
 			children = (
+				27478D372817FEFC001D73A7 /* API */,
+				27478D2E2817F7BA001D73A7 /* Common */,
+				27478D302817F7BA001D73A7 /* Components */,
+				27478D1F2817F7AA001D73A7 /* Manager */,
+				27478D232817F7AA001D73A7 /* Model */,
+				27478D072817F781001D73A7 /* MainViper */,
+				27478CE72817F697001D73A7 /* BaseViper */,
 				27478CB42817F1A7001D73A7 /* AppDelegate.swift */,
-				27478CB62817F1A7001D73A7 /* SceneDelegate.swift */,
 				27478CB82817F1A7001D73A7 /* ViewController.swift */,
 				27478CBA2817F1A7001D73A7 /* Main.storyboard */,
 				27478CBD2817F1A9001D73A7 /* Assets.xcassets */,
@@ -125,6 +189,229 @@
 				27478CD72817F1AA001D73A7 /* GuardianProToDoUITestsLaunchTests.swift */,
 			);
 			path = GuardianProToDoUITests;
+			sourceTree = "<group>";
+		};
+		27478CE72817F697001D73A7 /* BaseViper */ = {
+			isa = PBXGroup;
+			children = (
+				27478CE82817F697001D73A7 /* BViewModel */,
+				27478CF82817F697001D73A7 /* BTableViewController */,
+			);
+			path = BaseViper;
+			sourceTree = "<group>";
+		};
+		27478CE82817F697001D73A7 /* BViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27478CE92817F697001D73A7 /* Model Interface */,
+				27478CEB2817F697001D73A7 /* ApplicationLoggic */,
+				27478CEF2817F697001D73A7 /* User Interface */,
+			);
+			path = BViewModel;
+			sourceTree = "<group>";
+		};
+		27478CE92817F697001D73A7 /* Model Interface */ = {
+			isa = PBXGroup;
+			children = (
+				27478CEA2817F697001D73A7 /* BViperModuleInterface.swift */,
+			);
+			path = "Model Interface";
+			sourceTree = "<group>";
+		};
+		27478CEB2817F697001D73A7 /* ApplicationLoggic */ = {
+			isa = PBXGroup;
+			children = (
+				27478CEC2817F697001D73A7 /* Interaction */,
+			);
+			path = ApplicationLoggic;
+			sourceTree = "<group>";
+		};
+		27478CEC2817F697001D73A7 /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				27478CED2817F697001D73A7 /* BViperInteractorInterface.swift */,
+				27478CEE2817F697001D73A7 /* BViperInteractor.swift */,
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
+		27478CEF2817F697001D73A7 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				27478CF02817F697001D73A7 /* Presenter */,
+				27478CF22817F697001D73A7 /* WireFrame */,
+				27478CF52817F697001D73A7 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		27478CF02817F697001D73A7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				27478CF12817F697001D73A7 /* BViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		27478CF22817F697001D73A7 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				27478CF32817F697001D73A7 /* BViperWireframe.swift */,
+				27478CF42817F697001D73A7 /* BViperWireFrameInterface.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		27478CF52817F697001D73A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27478CF62817F697001D73A7 /* BViperViewController.swift */,
+				27478CF72817F697001D73A7 /* BViperViewControllerInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27478CF82817F697001D73A7 /* BTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27478CF92817F697001D73A7 /* BTableViewController.xib */,
+				27478CFA2817F697001D73A7 /* BTableViewController.swift */,
+			);
+			path = BTableViewController;
+			sourceTree = "<group>";
+		};
+		27478D072817F781001D73A7 /* MainViper */ = {
+			isa = PBXGroup;
+			children = (
+				27478D082817F781001D73A7 /* Module Interface */,
+				27478D0A2817F781001D73A7 /* Application Logic */,
+				27478D0E2817F781001D73A7 /* User Interface */,
+			);
+			path = MainViper;
+			sourceTree = "<group>";
+		};
+		27478D082817F781001D73A7 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				27478D092817F781001D73A7 /* MainViperModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		27478D0A2817F781001D73A7 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				27478D0B2817F781001D73A7 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		27478D0B2817F781001D73A7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				27478D0C2817F781001D73A7 /* MainViperInteractor.swift */,
+				27478D0D2817F781001D73A7 /* MainViperInteractorInterface.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		27478D0E2817F781001D73A7 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				27478D0F2817F781001D73A7 /* Presenter */,
+				27478D112817F781001D73A7 /* Wireframe */,
+				27478D142817F781001D73A7 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		27478D0F2817F781001D73A7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				27478D102817F781001D73A7 /* MainViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		27478D112817F781001D73A7 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				27478D122817F781001D73A7 /* MainViperWireframeInterface.swift */,
+				27478D132817F781001D73A7 /* MainViperWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		27478D142817F781001D73A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27478D152817F781001D73A7 /* MainViperViewInterface.swift */,
+				27478D162817F781001D73A7 /* MainViperViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27478D1F2817F7AA001D73A7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				27478D202817F7AA001D73A7 /* ServiceManager.swift */,
+				27478D212817F7AA001D73A7 /* NavigationManager.swift */,
+				27478D222817F7AA001D73A7 /* UIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		27478D232817F7AA001D73A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27478D242817F7AA001D73A7 /* ResponseBaseModel.swift */,
+				27478D262817F7AA001D73A7 /* BaseModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27478D262817F7AA001D73A7 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				27478D272817F7AA001D73A7 /* ViewObjectModel.swift */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		27478D2E2817F7BA001D73A7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				27478D2F2817F7BA001D73A7 /* Constant.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		27478D302817F7BA001D73A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				27478D312817F7BA001D73A7 /* UIModel */,
+				27478D332817F7BA001D73A7 /* BBaseTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		27478D312817F7BA001D73A7 /* UIModel */ = {
+			isa = PBXGroup;
+			children = (
+				27478D322817F7BA001D73A7 /* TableViewCellModel.swift */,
+			);
+			path = UIModel;
+			sourceTree = "<group>";
+		};
+		27478D372817FEFC001D73A7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				27478D382817FEFC001D73A7 /* ApiError.swift */,
+				27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */,
+				27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */,
+				27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +520,7 @@
 			files = (
 				27478CC12817F1A9001D73A7 /* LaunchScreen.storyboard in Resources */,
 				27478CBE2817F1A9001D73A7 /* Assets.xcassets in Resources */,
+				27478D032817F697001D73A7 /* BTableViewController.xib in Resources */,
 				27478CBC2817F1A7001D73A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +546,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27478D1C2817F781001D73A7 /* MainViperWireframe.swift in Sources */,
+				27478D2D2817F7AA001D73A7 /* ViewObjectModel.swift in Sources */,
+				27478CFD2817F697001D73A7 /* BViperInteractor.swift in Sources */,
+				27478CFC2817F697001D73A7 /* BViperInteractorInterface.swift in Sources */,
+				27478CFF2817F697001D73A7 /* BViperWireframe.swift in Sources */,
+				27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */,
+				27478D172817F781001D73A7 /* MainViperModuleInterface.swift in Sources */,
+				27478D282817F7AA001D73A7 /* ServiceManager.swift in Sources */,
+				27478D192817F781001D73A7 /* MainViperInteractorInterface.swift in Sources */,
+				27478D422817FEFC001D73A7 /* EventsEndpointHandler.swift in Sources */,
 				27478CB92817F1A7001D73A7 /* ViewController.swift in Sources */,
+				27478D1A2817F781001D73A7 /* MainViperPresenter.swift in Sources */,
+				27478D022817F697001D73A7 /* BViperViewControllerInterface.swift in Sources */,
+				27478CFE2817F697001D73A7 /* BViperPresenter.swift in Sources */,
+				27478D432817FEFC001D73A7 /* URLSessionMock.swift in Sources */,
+				27478D2A2817F7AA001D73A7 /* UIManager.swift in Sources */,
+				27478D292817F7AA001D73A7 /* NavigationManager.swift in Sources */,
+				27478D2B2817F7AA001D73A7 /* ResponseBaseModel.swift in Sources */,
+				27478D042817F697001D73A7 /* BTableViewController.swift in Sources */,
+				27478CFB2817F697001D73A7 /* BViperModuleInterface.swift in Sources */,
+				27478D012817F697001D73A7 /* BViperViewController.swift in Sources */,
+				27478D362817F7BA001D73A7 /* BBaseTableViewCell.swift in Sources */,
+				27478D352817F7BA001D73A7 /* TableViewCellModel.swift in Sources */,
+				27478D1D2817F781001D73A7 /* MainViperViewInterface.swift in Sources */,
+				27478D402817FEFC001D73A7 /* ApiError.swift in Sources */,
+				27478D342817F7BA001D73A7 /* Constant.swift in Sources */,
+				27478D1E2817F781001D73A7 /* MainViperViewController.swift in Sources */,
+				27478D182817F781001D73A7 /* MainViperInteractor.swift in Sources */,
+				27478D1B2817F781001D73A7 /* MainViperWireframeInterface.swift in Sources */,
 				27478CB52817F1A7001D73A7 /* AppDelegate.swift in Sources */,
-				27478CB72817F1A7001D73A7 /* SceneDelegate.swift in Sources */,
+				27478D002817F697001D73A7 /* BViperWireFrameInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
