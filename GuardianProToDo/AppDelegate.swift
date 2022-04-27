@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let viewController = MainViperWireframe().controller!
         let navigationController = UINavigationController(rootViewController: viewController)
-        navigationController.navigationBar.backgroundColor = .gray
+        navigationController.navigationBar.backgroundColor = .red
         
         return navigationController
     }

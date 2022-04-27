@@ -1,5 +1,5 @@
 //
-//  CurrencyAmountComponent.swift
+//  CurrencyComponent.swift
 //  GuardianProToDo
 //
 //  Created by Alim Yıldız on 4/27/22.
@@ -7,24 +7,24 @@
 
 import UIKit
 
-struct CurrencyAmountComponentModel {
+struct CurrencyComponentModel {
     
-    var currencyName: String?
-    var currencyAmount: String?
+    var currencyShortName: String?
+    var currencyFullName: String?
 
     var controller: UIViewController?
     
-    init(currencyName: String? = nil ,currencyAmount: String? = nil,controller: UIViewController? = nil){
+    init(currencyShortName: String? = nil ,currencyFullName: String? = nil,controller: UIViewController? = nil){
         
-        self.currencyName = currencyName
-        self.currencyAmount = currencyAmount
+        self.currencyShortName = currencyShortName
+        self.currencyFullName = currencyFullName
         self.controller = controller
     }
 }
-class CurrencyAmountComponent: BBaseTableViewCell {
+class CurrencyComponent: BBaseTableViewCell {
 
-    @IBOutlet weak var currencyAmount: UILabel!
-    @IBOutlet weak var currencyName: UILabel!
+    @IBOutlet weak var currencyFullName: UILabel!
+    
     override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -38,9 +38,8 @@ class CurrencyAmountComponent: BBaseTableViewCell {
     override public func createViewObject(baseObject: Any!, indexPath: IndexPath) {
         super.createViewObject(baseObject: baseObject, indexPath: indexPath)
         
-        if let model = self.baseObject.viewData as? CurrencyAmountComponentModel {
-            self.currencyAmount.text = model.currencyAmount
-            self.currencyName.text = model.currencyName
+        if let model = self.baseObject.viewData as? CurrencyComponentModel {
+            self.currencyFullName.text = model.currencyFullName
 
         }
     }

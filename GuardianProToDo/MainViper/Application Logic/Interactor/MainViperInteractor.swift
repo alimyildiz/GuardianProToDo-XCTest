@@ -11,12 +11,24 @@ import UIKit
 
 class MainViperInteractor: BViperInteractor
 {
-    
     var responseBaseModel: ResponseBaseModel?
+    var currencyListModel: CurrencyListModel?
+
     var controller: UIViewController?
     override func getViewData(data: Any?, controller: UIViewController) {
         self.controller = controller
-        self.getAllEventsMethod()
+        
+        getSupportedCodes()
+       // self.getAllEventsMethod()
+    }
+    
+    func getSupportedCodes(){
+        ServiceManager.sharedService.getSupportedCodes { data in
+            self.currencyListModel = data
+            self.createComponents()
+        } failure: { error in
+            print("error: \(error)")
+        }
     }
     
     //Get ALL Events
@@ -33,25 +45,15 @@ class MainViperInteractor: BViperInteractor
     func createComponents() {
         var compList = [ViewObjectModel]()
         
-        
-        compList.append(DefaultCurrencyComponent.getViewObjectModel(
-            viewData: DefaultCurrencyComponentModel(defaultCurrencyName:self.responseBaseModel?.baseCode,controller:self.controller),
-            data: nil,
-            parameterName: #keyPath(MainViperViewController.defaultCurrencyComponent),
-            section: 0,
-            selectedData: nil))
-        
-        for conversionRatesModel in (self.responseBaseModel?.conversionRatesList)! {
+        for supportedCode in (self.currencyListModel?.supportedCodesList)! {
             
-            compList.append(CurrencyAmountComponent.getViewObjectModel(
-                viewData: CurrencyAmountComponentModel.init(currencyName:conversionRatesModel.currencyName ,currencyAmount:"\(String(describing: (conversionRatesModel.currencyRate)!))",controller:self.controller),
+            compList.append(CurrencyComponent.getViewObjectModel(
+                viewData: CurrencyComponentModel(currencyShortName:supportedCode.first?.currencyShortName ,currencyFullName:"\(String(describing: (supportedCode.first?.currencyFullName)!))",controller:self.controller),
                 data: nil,
-                parameterName: #keyPath(MainViperViewController.currencyAmountComponent),
-                section: 2,
+                parameterName: #keyPath(MainViperViewController.currencyComponent),
+                section: 0,
                 selectedData: nil))
-            
         }
-        
         
         presenter.gotViewData(data: nil, model: TableViewCellModel(compList))
     }

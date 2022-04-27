@@ -17,12 +17,19 @@ public class ViewObjectModel: NSObject {
     public var selectedData: Any?
     public var viewName: String?
     public var indexPath: IndexPath?
+    public var type: ComponentType!
+    public var headerHeight: CGFloat?
+    public var footerHeight: CGFloat?
+
     
     convenience public init(viewName:String?,
                             viewData: Any?,
                             data: Any?,
                             parameterName: String? = nil,
                             indexPath:IndexPath? = nil,
+                            type: ComponentType = .component,
+                            headerHeight: CGFloat? = nil,
+                            footerHeight: CGFloat? = nil,
                             section: Int? = 0,
                             selectedData: Any? = nil) {
         self.init()
@@ -34,5 +41,8 @@ public class ViewObjectModel: NSObject {
         self.section = section
         self.viewName = viewName
         self.indexPath = indexPath
+        self.type = type
+        self.headerHeight = headerHeight
+        self.footerHeight = footerHeight
     }
 }

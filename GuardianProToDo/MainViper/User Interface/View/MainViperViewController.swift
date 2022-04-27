@@ -11,10 +11,10 @@ import UIKit
 class MainViperViewController: BViperViewController{
 
     @objc var defaultCurrencyComponent: DefaultCurrencyComponent?
-    @objc var currencyAmountComponent: CurrencyAmountComponent?
+    @objc var currencyComponent: CurrencyComponent?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "Currency List"
        // navBarTitle = "enterKey".localized()
     }
 }

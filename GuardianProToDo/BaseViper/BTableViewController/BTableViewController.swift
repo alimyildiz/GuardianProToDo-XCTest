@@ -44,16 +44,17 @@ open class BTableViewController: UITableViewController {
 
    open override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-    
-        if data != nil && data.componentList != nil {
-            return 1
-        }
-        return 0
+       
+       if data != nil && data.sectionList != nil {
+           return data.sectionList.count
+       }
+       
+       return 0
     }
 
   open override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.componentList!.count
+      return data.sectionList[section].componentList.count
   }
 
    open override  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
