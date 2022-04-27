@@ -45,6 +45,12 @@
 		27478D422817FEFC001D73A7 /* EventsEndpointHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */; };
 		27478D432817FEFC001D73A7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */; };
 		27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */; };
+		27494C8A28189DE1004F6851 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8928189DE1004F6851 /* DateUtils.swift */; };
+		27494C8C2818A33A004F6851 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8B2818A33A004F6851 /* ContentManager.swift */; };
+		27494C8F2818BA2B004F6851 /* DefaultCurrencyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8D2818BA2B004F6851 /* DefaultCurrencyComponent.swift */; };
+		27494C902818BA2B004F6851 /* DefaultCurrencyComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27494C8E2818BA2B004F6851 /* DefaultCurrencyComponent.xib */; };
+		27494C932818C214004F6851 /* CurrencyAmountComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C912818C214004F6851 /* CurrencyAmountComponent.swift */; };
+		27494C942818C214004F6851 /* CurrencyAmountComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27494C922818C214004F6851 /* CurrencyAmountComponent.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,12 @@
 		27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsEndpointHandler.swift; sourceTree = "<group>"; };
 		27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 		27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
+		27494C8928189DE1004F6851 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		27494C8B2818A33A004F6851 /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		27494C8D2818BA2B004F6851 /* DefaultCurrencyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCurrencyComponent.swift; sourceTree = "<group>"; };
+		27494C8E2818BA2B004F6851 /* DefaultCurrencyComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCurrencyComponent.xib; sourceTree = "<group>"; };
+		27494C912818C214004F6851 /* CurrencyAmountComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAmountComponent.swift; sourceTree = "<group>"; };
+		27494C922818C214004F6851 /* CurrencyAmountComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyAmountComponent.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +169,7 @@
 		27478CB32817F1A7001D73A7 /* GuardianProToDo */ = {
 			isa = PBXGroup;
 			children = (
+				27494C8828189D91004F6851 /* Utils */,
 				27478D372817FEFC001D73A7 /* API */,
 				27478D2E2817F7BA001D73A7 /* Common */,
 				27478D302817F7BA001D73A7 /* Components */,
@@ -357,6 +370,7 @@
 				27478D202817F7AA001D73A7 /* ServiceManager.swift */,
 				27478D212817F7AA001D73A7 /* NavigationManager.swift */,
 				27478D222817F7AA001D73A7 /* UIManager.swift */,
+				27494C8B2818A33A004F6851 /* ContentManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -391,6 +405,10 @@
 			children = (
 				27478D312817F7BA001D73A7 /* UIModel */,
 				27478D332817F7BA001D73A7 /* BBaseTableViewCell.swift */,
+				27494C8D2818BA2B004F6851 /* DefaultCurrencyComponent.swift */,
+				27494C8E2818BA2B004F6851 /* DefaultCurrencyComponent.xib */,
+				27494C912818C214004F6851 /* CurrencyAmountComponent.swift */,
+				27494C922818C214004F6851 /* CurrencyAmountComponent.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -412,6 +430,14 @@
 				27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		27494C8828189D91004F6851 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				27494C8928189DE1004F6851 /* DateUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,7 +544,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27494C942818C214004F6851 /* CurrencyAmountComponent.xib in Resources */,
 				27478CC12817F1A9001D73A7 /* LaunchScreen.storyboard in Resources */,
+				27494C902818BA2B004F6851 /* DefaultCurrencyComponent.xib in Resources */,
 				27478CBE2817F1A9001D73A7 /* Assets.xcassets in Resources */,
 				27478D032817F697001D73A7 /* BTableViewController.xib in Resources */,
 				27478CBC2817F1A7001D73A7 /* Main.storyboard in Resources */,
@@ -550,6 +578,7 @@
 				27478D2D2817F7AA001D73A7 /* ViewObjectModel.swift in Sources */,
 				27478CFD2817F697001D73A7 /* BViperInteractor.swift in Sources */,
 				27478CFC2817F697001D73A7 /* BViperInteractorInterface.swift in Sources */,
+				27494C8C2818A33A004F6851 /* ContentManager.swift in Sources */,
 				27478CFF2817F697001D73A7 /* BViperWireframe.swift in Sources */,
 				27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */,
 				27478D172817F781001D73A7 /* MainViperModuleInterface.swift in Sources */,
@@ -566,12 +595,15 @@
 				27478D2B2817F7AA001D73A7 /* ResponseBaseModel.swift in Sources */,
 				27478D042817F697001D73A7 /* BTableViewController.swift in Sources */,
 				27478CFB2817F697001D73A7 /* BViperModuleInterface.swift in Sources */,
+				27494C932818C214004F6851 /* CurrencyAmountComponent.swift in Sources */,
 				27478D012817F697001D73A7 /* BViperViewController.swift in Sources */,
 				27478D362817F7BA001D73A7 /* BBaseTableViewCell.swift in Sources */,
 				27478D352817F7BA001D73A7 /* TableViewCellModel.swift in Sources */,
 				27478D1D2817F781001D73A7 /* MainViperViewInterface.swift in Sources */,
 				27478D402817FEFC001D73A7 /* ApiError.swift in Sources */,
+				27494C8A28189DE1004F6851 /* DateUtils.swift in Sources */,
 				27478D342817F7BA001D73A7 /* Constant.swift in Sources */,
+				27494C8F2818BA2B004F6851 /* DefaultCurrencyComponent.swift in Sources */,
 				27478D1E2817F781001D73A7 /* MainViperViewController.swift in Sources */,
 				27478D182817F781001D73A7 /* MainViperInteractor.swift in Sources */,
 				27478D1B2817F781001D73A7 /* MainViperWireframeInterface.swift in Sources */,

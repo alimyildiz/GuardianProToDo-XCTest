@@ -10,6 +10,8 @@ import UIKit
 
 class MainViperViewController: BViperViewController{
 
+    @objc var defaultCurrencyComponent: DefaultCurrencyComponent?
+    @objc var currencyAmountComponent: CurrencyAmountComponent?
     override func viewDidLoad() {
         super.viewDidLoad()
 

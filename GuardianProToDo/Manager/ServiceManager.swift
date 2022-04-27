@@ -11,63 +11,82 @@ import UIKit
 class ServiceManager: NSObject {
     
     public static var sharedService: ServiceManager = ServiceManager()
-
-    var dataModel:[String: Any]?
         
     private let baseUrlString = "https://v6.exchangerate-api.com"
     private let apiEndpoint = "/v6/183032f027c6376ec447ee31/latest/"
-    private var currencyEndpoint = ""
     
     var responseBaseModel: ResponseBaseModel?
+    var rateData: Data?
+    
+    var completionHandler: (() -> Void)?
     
     //MARK: Service Get Executer
-    func getEvents(currency:String?,success: @escaping (Data)->(), failure: @escaping (Error?) -> ()) {
+    func getEvents(currency:String?,success: @escaping (ResponseBaseModel?)->(), failure: @escaping (Error?) -> ()) {
         
-        // burada 1 günlük saat kontrolü yapılacak
-        //Defoult userdan data varsa ve bir gün dolmamış ise defoult userdan tekrar data cekilir...
-
+        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: "CurrencyRateModel")
+        let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: "LastDate") as? String
+        
+        if dataModel != nil && lastDate != nil {
+            
+            let currentDate = DateUtils.instance.calculateHours(from: DateUtils.instance.convertStringToDate(dateString: lastDate!))
+            
+            // 24 constant tanımlanacak...
+            if currentDate >= 24 {
+                self.executer(currency: currency) {
+                    success(self.responseBaseModel!)
+                }
+            }else {
+                // 24 saatten küçük durumlarda...
+                self.setResponseModel(dataModel: dataModel as? Data)
+                success(self.responseBaseModel!)
+            }
+        }else {
+            // Hiç kayıt yapılmadıysa burası çalışır...
+            self.executer(currency: currency) {
+                 success(self.responseBaseModel!)
+            }
+        }
+    }
+    
+    func executer(currency:String?,completionHandler: @escaping () -> Void) {
+        
         if let currencyEndpoint = currency {
-            
-            self.currencyEndpoint = currencyEndpoint
-            
+            self.completionHandler = completionHandler
+                        
             let _URL = URL(string: baseUrlString + apiEndpoint + currencyEndpoint)!
             var request = URLRequest(url: _URL)
                     
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
-                if let rateData = data {
+                if let rateDataModel = data {
+                    self.rateData = rateDataModel
                     
-                 /*   let jsonRes = try? JSONSerialization.jsonObject(with: rateData, options: [])
-                        print("Response json is: \(jsonRes)")
-                        
-                        guard let value = jsonRes as? [String: Any] else {
-                            return
-                        }*/
-                    
-                    do {
-                        
-                        self.responseBaseModel = try! JSONDecoder().decode(ResponseBaseModel.self, from: rateData)
-                        print((self.responseBaseModel?.baseCode)!)
-                    }catch let error {
-                        print(error)
-                    }
-                    
-                    
-                   // UserDefaults.standard.set(rateData, forKey: "exchangeJsonData") //setObject
- 
-                  //  let dataModel =  UserDefaults.standard.string(forKey: "exchangeJsonData")
+                    self.setResponseModel(dataModel: rateDataModel)
 
-                    // Defoult user'a data basılır....
-                    success(rateData)
+                    // Güncel data set edilir...
+                    ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: "CurrencyRateModel")
+                   
+                    // Güncel Saat Set edilir...
+                    ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: "LastDate")
+                    self.completionHandler!()
+
                 } else if let error = error {
                     print("HTTP Request Failed \(error)")
                 }
             }
-            
             task.resume()
+            
         } else {
             // uyarı verilecek
+        }
+    }
+    
+    func setResponseModel(dataModel: Data?)  {
+        do {
+            self.responseBaseModel = try! JSONDecoder().decode(ResponseBaseModel.self, from: dataModel!)
+        }catch let error {
+            print(error.localizedDescription)
         }
     }
 }
