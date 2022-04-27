@@ -13,7 +13,10 @@ class ExchangeViperPresenter: BViperPresenter{
 }
 
 extension ExchangeViperPresenter: ExchangeViperModuleInterface{
-    
+    func updatedExchangeCurrencyCodeType(exchangeModel:ExchangeModel?) {
+        
+        (interactor as? ExchangeViperInteractorInput)?.updatedExchangeCurrencyCodeType(exchangeModel: exchangeModel)
+    }
 }
 
 extension ExchangeViperPresenter: ExchangeViperInteractorOutput{

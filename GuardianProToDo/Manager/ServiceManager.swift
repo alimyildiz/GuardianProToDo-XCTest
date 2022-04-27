@@ -85,7 +85,7 @@ class ServiceManager: NSObject {
     
     func getEvents(currency:String?,success: @escaping (ResponseBaseModel?)->(), failure: @escaping (Error?) -> ()) {
         
-        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: "CurrencyRateModel") as? Date
+        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: currency!) as? Date
         let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: "LastDate") as? String
         
         if dataModel != nil && lastDate != nil {
@@ -127,7 +127,7 @@ class ServiceManager: NSObject {
                     self.setResponseModel(dataModel: rateDataModel)
 
                     // Güncel data set edilir...
-                    ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: "CurrencyRateModel")
+                    ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: currency!)
                    
                     // Güncel Saat Set edilir...
                     ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: "LastDate")

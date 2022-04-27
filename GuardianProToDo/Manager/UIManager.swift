@@ -46,15 +46,15 @@ class UIManager: NSObject {
             controller.present(alert, animated: true, completion: nil)
     }
     
-    func alertTableViewController(selectedData:String? = nil, conservationRateList: [ConversionRates]? = nil, controller: UIViewController) {
-        
+    func alertTableViewController(selectedData:String? = nil, data: Any?, controller: UIViewController) {
         
         let alertViewController = AlertTableViewController.init(nibName: "AlertTableViewController", bundle: nil)
+        alertViewController.dataModel = data as? ExchangeModel
         alertViewController.providesPresentationContextTransitionStyle = true
         alertViewController.definesPresentationContext = true
         alertViewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         alertViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        //alertViewController.delegate = self
+        alertViewController.delegate = controller as? CustomAlertViewDelegate
         controller.present(alertViewController, animated: true, completion: nil)
     }
 }

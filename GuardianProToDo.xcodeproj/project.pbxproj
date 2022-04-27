@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27451C6F2819CD78002F2CD3 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C6D2819CD78002F2CD3 /* AlertTableViewCell.swift */; };
+		27451C702819CD78002F2CD3 /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27451C6E2819CD78002F2CD3 /* AlertTableViewCell.xib */; };
+		27451C722819D3F7002F2CD3 /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C712819D3F7002F2CD3 /* ExchangeModel.swift */; };
 		27478CB52817F1A7001D73A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CB42817F1A7001D73A7 /* AppDelegate.swift */; };
 		27478CB92817F1A7001D73A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CB82817F1A7001D73A7 /* ViewController.swift */; };
 		27478CBC2817F1A7001D73A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27478CBA2817F1A7001D73A7 /* Main.storyboard */; };
@@ -86,6 +89,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27451C6D2819CD78002F2CD3 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
+		27451C6E2819CD78002F2CD3 /* AlertTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
+		27451C712819D3F7002F2CD3 /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
 		27478CB12817F1A7001D73A7 /* GuardianProToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardianProToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27478CB42817F1A7001D73A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27478CB82817F1A7001D73A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +182,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27451C6C2819CD56002F2CD3 /* AlertTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				27451C6D2819CD78002F2CD3 /* AlertTableViewCell.swift */,
+				27451C6E2819CD78002F2CD3 /* AlertTableViewCell.xib */,
+			);
+			path = AlertTableViewCell;
+			sourceTree = "<group>";
+		};
 		27478CA82817F1A7001D73A7 = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +430,7 @@
 				27478D242817F7AA001D73A7 /* ResponseBaseModel.swift */,
 				27478D262817F7AA001D73A7 /* BaseModel */,
 				275B3BB82819333B001E0FB7 /* CurrencyListModel.swift */,
+				27451C712819D3F7002F2CD3 /* ExchangeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -567,6 +583,7 @@
 		275B3BDB28199D09001E0FB7 /* UIController */ = {
 			isa = PBXGroup;
 			children = (
+				27451C6C2819CD56002F2CD3 /* AlertTableViewCell */,
 				275B3BE62819A17A001E0FB7 /* AlertTableViewController.swift */,
 				275B3BE72819A17A001E0FB7 /* AlertTableViewController.xib */,
 			);
@@ -681,6 +698,7 @@
 				27478CC12817F1A9001D73A7 /* LaunchScreen.storyboard in Resources */,
 				27494C902818BA2B004F6851 /* DefaultCurrencyComponent.xib in Resources */,
 				275B3BDA281969D3001E0FB7 /* ExchangeComponent.xib in Resources */,
+				27451C702819CD78002F2CD3 /* AlertTableViewCell.xib in Resources */,
 				275B3BE92819A17A001E0FB7 /* AlertTableViewController.xib in Resources */,
 				27478CBE2817F1A9001D73A7 /* Assets.xcassets in Resources */,
 				27478D032817F697001D73A7 /* BTableViewController.xib in Resources */,
@@ -729,10 +747,12 @@
 				27478D1A2817F781001D73A7 /* MainViperPresenter.swift in Sources */,
 				27478D022817F697001D73A7 /* BViperViewControllerInterface.swift in Sources */,
 				27478CFE2817F697001D73A7 /* BViperPresenter.swift in Sources */,
+				27451C722819D3F7002F2CD3 /* ExchangeModel.swift in Sources */,
 				27478D432817FEFC001D73A7 /* URLSessionMock.swift in Sources */,
 				27478D2A2817F7AA001D73A7 /* UIManager.swift in Sources */,
 				27478D292817F7AA001D73A7 /* NavigationManager.swift in Sources */,
 				27478D2B2817F7AA001D73A7 /* ResponseBaseModel.swift in Sources */,
+				27451C6F2819CD78002F2CD3 /* AlertTableViewCell.swift in Sources */,
 				275B3BD9281969D3001E0FB7 /* ExchangeComponent.swift in Sources */,
 				27478D042817F697001D73A7 /* BTableViewController.swift in Sources */,
 				27478CFB2817F697001D73A7 /* BViperModuleInterface.swift in Sources */,

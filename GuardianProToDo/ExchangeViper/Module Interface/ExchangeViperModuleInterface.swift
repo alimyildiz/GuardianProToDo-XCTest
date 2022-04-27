@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ExchangeViperModuleInterface: BViperModuleInterface{
-
+    func updatedExchangeCurrencyCodeType(exchangeModel:ExchangeModel?)
 }

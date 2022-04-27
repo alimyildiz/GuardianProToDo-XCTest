@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol ExchangeViperInteractorInput: BViperInteractorInput{
-
+    func updatedExchangeCurrencyCodeType(exchangeModel:ExchangeModel?)
 }
 
 protocol ExchangeViperInteractorOutput: BViperInteractorOutput{

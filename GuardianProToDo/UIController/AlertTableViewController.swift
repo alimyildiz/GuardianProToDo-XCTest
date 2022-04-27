@@ -7,28 +7,101 @@
 
 import UIKit
 
-/*protocol CustomAlertViewDelegate {
-    func okButtonTapped(selectedOption: String, textFieldValue: String)
-    func cancelButtonTapped()
+protocol CustomAlertViewDelegate {
+    func selectedData(exchangeModel: ExchangeModel)
 }
-*/
-class AlertTableViewController: UIViewController {
 
+class AlertTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+
+    @IBOutlet weak var alertTableView: UITableView!
     @IBOutlet weak var alertView: UIView!
-   // var delegate: CustomAlertViewDelegate?
+    
+    var dataModel: ExchangeModel?
+    var delegate: CustomAlertViewDelegate?
 
     let alertViewGrayColor = UIColor(red: 224.0/255.0, green: 224.0/255.0, blue: 224.0/255.0, alpha: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.alertTableView.dataSource = self
+        self.alertTableView.delegate = self
+           
+        self.registerTableViewCells()
 
         // Do any additional setup after loading the view.
+    }
+    
+    private func registerTableViewCells() {
+        
+        let tableViewCell = UINib(nibName: "AlertTableViewCell",
+                                  bundle: nil)
+        self.alertTableView.register(tableViewCell,
+                                forCellReuseIdentifier: "AlertTableViewCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupView()
         animateView()
+    }
+    
+    /// #TableView Delegate
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (dataModel?.responseBaseModel?.conversionRatesList.count)!
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "AlertTableViewCell") as? AlertTableViewCell {
+            
+            let currencyCode = dataModel?.responseBaseModel?.conversionRatesList[indexPath.row].currencyName
+
+            if (dataModel?.selectedCurrencyTye)! {// main selecteD
+                if (dataModel?.responseBaseModel?.conversionRatesList.count)! > 0 {
+
+                    if currencyCode == (dataModel?.mainCurrencyCode)! {
+                        
+                        print("\(String(describing: currencyCode))" + "=" + ( dataModel?.mainCurrencyCode)!)
+
+                        cell.checkBoxIcon.image = UIImage(named: "checkBoxIcon")
+                    }else {
+                        cell.checkBoxIcon.image = nil
+                    }
+                    cell.currencyNameLabel.text = currencyCode
+                }
+            }else {//converted currrency
+                
+                if (dataModel?.responseBaseModel?.conversionRatesList.count)! > 0 {
+                    print(dataModel?.randomConvertCurrencyCode)
+
+                    if currencyCode == (dataModel?.randomConvertCurrencyCode)! {
+                        cell.checkBoxIcon.image = UIImage(named: "checkBoxIcon")
+                    }else {
+                        cell.checkBoxIcon.image = nil
+                    }
+                    cell.currencyNameLabel.text = currencyCode
+                }
+            }
+            
+            return cell
+        }
+        
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let currencyCode = dataModel?.responseBaseModel?.conversionRatesList[indexPath.row].currencyName {
+            if (dataModel?.selectedCurrencyTye)! {// main selected
+                dataModel?.mainCurrencyCode = currencyCode
+            }else {//converted currency
+                dataModel?.randomConvertCurrencyCode = currencyCode
+            }
+            
+            self.delegate?.selectedData(exchangeModel: dataModel!)
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     
@@ -47,7 +120,6 @@ class AlertTableViewController: UIViewController {
     }
     
     @IBAction func onTapCancelButton(_ sender: Any) {
-       // delegate?.cancelButtonTapped()
         self.dismiss(animated: true, completion: nil)
     }
     

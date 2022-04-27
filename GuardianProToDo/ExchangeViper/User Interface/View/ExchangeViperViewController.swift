@@ -16,7 +16,13 @@ class ExchangeViperViewController: BViperViewController{
     }
 }
 
-extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeComponentDelegate,UITextFieldDelegate {
+extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeComponentDelegate,UITextFieldDelegate, CustomAlertViewDelegate {
+   
+    /// Currency Type değiştiğinde bu delegate methodu çalışır...
+    func selectedData(exchangeModel: ExchangeModel) {
+        (presenter as? ExchangeViperModuleInterface)?.updatedExchangeCurrencyCodeType(exchangeModel: exchangeModel)
+    }
+    
     
     func exchangeAction() {
         
@@ -24,26 +30,18 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
     
     func mainCurrencyAction() {
         
-       /* var usernameTextField: UITextField?
-
-        let promptController = UIAlertController(title: "Username", message: nil, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            if let username = usernameTextField?.text {
-                //self.downloadRepositories(username)
-            }
-        }
-        promptController.addAction(okAction)
-        promptController.addChild(<#T##childController: UIViewController##UIViewController#>)
-        present(promptController, animated: true, completion: nil)*/
+        var exchangeModel = self.pageData as? ExchangeModel
+        exchangeModel?.selectedCurrencyTye = true
         
-        
-        UIManager.instance.alertTableViewController(controller: self)
-        
-        
+        UIManager.instance.alertTableViewController(data: exchangeModel, controller: self)
     }
     
     func convertedCurrencyAction() {
         
+        var exchangeModel = self.pageData as? ExchangeModel
+        exchangeModel?.selectedCurrencyTye = false
+        
+        UIManager.instance.alertTableViewController(data: exchangeModel, controller: self)
     }
 
     func textFieldDidChangeSelection(_ textField: UITextField) {
