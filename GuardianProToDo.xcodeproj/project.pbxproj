@@ -54,6 +54,18 @@
 		275B3BB428192C17001E0FB7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BB328192C17001E0FB7 /* Enums.swift */; };
 		275B3BB92819333B001E0FB7 /* CurrencyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BB82819333B001E0FB7 /* CurrencyListModel.swift */; };
 		275B3BBC281949BA001E0FB7 /* TableViewSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BBB281949BA001E0FB7 /* TableViewSectionModel.swift */; };
+		275B3BCF28194A12001E0FB7 /* ExchangeViperModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BC128194A12001E0FB7 /* ExchangeViperModuleInterface.swift */; };
+		275B3BD028194A12001E0FB7 /* ExchangeViperInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BC428194A12001E0FB7 /* ExchangeViperInteractorInterface.swift */; };
+		275B3BD128194A12001E0FB7 /* ExchangeViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BC528194A12001E0FB7 /* ExchangeViperInteractor.swift */; };
+		275B3BD228194A12001E0FB7 /* ExchangeViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BC828194A12001E0FB7 /* ExchangeViperPresenter.swift */; };
+		275B3BD328194A12001E0FB7 /* ExchangeViperWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BCA28194A12001E0FB7 /* ExchangeViperWireframeInterface.swift */; };
+		275B3BD428194A12001E0FB7 /* ExchangeViperWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BCB28194A12001E0FB7 /* ExchangeViperWireframe.swift */; };
+		275B3BD528194A12001E0FB7 /* ExchangeViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BCD28194A12001E0FB7 /* ExchangeViperViewController.swift */; };
+		275B3BD628194A12001E0FB7 /* ExchangeViperViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BCE28194A12001E0FB7 /* ExchangeViperViewInterface.swift */; };
+		275B3BD9281969D3001E0FB7 /* ExchangeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BD7281969D3001E0FB7 /* ExchangeComponent.swift */; };
+		275B3BDA281969D3001E0FB7 /* ExchangeComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275B3BD8281969D3001E0FB7 /* ExchangeComponent.xib */; };
+		275B3BE82819A17A001E0FB7 /* AlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BE62819A17A001E0FB7 /* AlertTableViewController.swift */; };
+		275B3BE92819A17A001E0FB7 /* AlertTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275B3BE72819A17A001E0FB7 /* AlertTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +137,18 @@
 		275B3BB328192C17001E0FB7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		275B3BB82819333B001E0FB7 /* CurrencyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListModel.swift; sourceTree = "<group>"; };
 		275B3BBB281949BA001E0FB7 /* TableViewSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionModel.swift; sourceTree = "<group>"; };
+		275B3BC128194A12001E0FB7 /* ExchangeViperModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperModuleInterface.swift; sourceTree = "<group>"; };
+		275B3BC428194A12001E0FB7 /* ExchangeViperInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperInteractorInterface.swift; sourceTree = "<group>"; };
+		275B3BC528194A12001E0FB7 /* ExchangeViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperInteractor.swift; sourceTree = "<group>"; };
+		275B3BC828194A12001E0FB7 /* ExchangeViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperPresenter.swift; sourceTree = "<group>"; };
+		275B3BCA28194A12001E0FB7 /* ExchangeViperWireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperWireframeInterface.swift; sourceTree = "<group>"; };
+		275B3BCB28194A12001E0FB7 /* ExchangeViperWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperWireframe.swift; sourceTree = "<group>"; };
+		275B3BCD28194A12001E0FB7 /* ExchangeViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperViewController.swift; sourceTree = "<group>"; };
+		275B3BCE28194A12001E0FB7 /* ExchangeViperViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeViperViewInterface.swift; sourceTree = "<group>"; };
+		275B3BD7281969D3001E0FB7 /* ExchangeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeComponent.swift; sourceTree = "<group>"; };
+		275B3BD8281969D3001E0FB7 /* ExchangeComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeComponent.xib; sourceTree = "<group>"; };
+		275B3BE62819A17A001E0FB7 /* AlertTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewController.swift; sourceTree = "<group>"; };
+		275B3BE72819A17A001E0FB7 /* AlertTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,14 +199,16 @@
 		27478CB32817F1A7001D73A7 /* GuardianProToDo */ = {
 			isa = PBXGroup;
 			children = (
+				275B3BDB28199D09001E0FB7 /* UIController */,
+				27478CE72817F697001D73A7 /* BaseViper */,
+				27478D072817F781001D73A7 /* MainViper */,
+				275B3BBF28194A12001E0FB7 /* ExchangeViper */,
 				27494C8828189D91004F6851 /* Utils */,
 				27478D372817FEFC001D73A7 /* API */,
 				27478D2E2817F7BA001D73A7 /* Common */,
 				27478D302817F7BA001D73A7 /* Components */,
 				27478D1F2817F7AA001D73A7 /* Manager */,
 				27478D232817F7AA001D73A7 /* Model */,
-				27478D072817F781001D73A7 /* MainViper */,
-				27478CE72817F697001D73A7 /* BaseViper */,
 				27478CB42817F1A7001D73A7 /* AppDelegate.swift */,
 				27478CB82817F1A7001D73A7 /* ViewController.swift */,
 				27478CBA2817F1A7001D73A7 /* Main.storyboard */,
@@ -418,6 +444,8 @@
 				27494C8E2818BA2B004F6851 /* DefaultCurrencyComponent.xib */,
 				27494C912818C214004F6851 /* CurrencyComponent.swift */,
 				27494C922818C214004F6851 /* CurrencyComponent.xib */,
+				275B3BD7281969D3001E0FB7 /* ExchangeComponent.swift */,
+				275B3BD8281969D3001E0FB7 /* ExchangeComponent.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -463,6 +491,86 @@
 				275B3BBB281949BA001E0FB7 /* TableViewSectionModel.swift */,
 			);
 			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		275B3BBF28194A12001E0FB7 /* ExchangeViper */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BC028194A12001E0FB7 /* Module Interface */,
+				275B3BC228194A12001E0FB7 /* Application Logic */,
+				275B3BC628194A12001E0FB7 /* User Interface */,
+			);
+			path = ExchangeViper;
+			sourceTree = "<group>";
+		};
+		275B3BC028194A12001E0FB7 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BC128194A12001E0FB7 /* ExchangeViperModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		275B3BC228194A12001E0FB7 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BC328194A12001E0FB7 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		275B3BC328194A12001E0FB7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BC428194A12001E0FB7 /* ExchangeViperInteractorInterface.swift */,
+				275B3BC528194A12001E0FB7 /* ExchangeViperInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		275B3BC628194A12001E0FB7 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BC728194A12001E0FB7 /* Presenter */,
+				275B3BC928194A12001E0FB7 /* Wireframe */,
+				275B3BCC28194A12001E0FB7 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		275B3BC728194A12001E0FB7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BC828194A12001E0FB7 /* ExchangeViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		275B3BC928194A12001E0FB7 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BCA28194A12001E0FB7 /* ExchangeViperWireframeInterface.swift */,
+				275B3BCB28194A12001E0FB7 /* ExchangeViperWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		275B3BCC28194A12001E0FB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BCD28194A12001E0FB7 /* ExchangeViperViewController.swift */,
+				275B3BCE28194A12001E0FB7 /* ExchangeViperViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		275B3BDB28199D09001E0FB7 /* UIController */ = {
+			isa = PBXGroup;
+			children = (
+				275B3BE62819A17A001E0FB7 /* AlertTableViewController.swift */,
+				275B3BE72819A17A001E0FB7 /* AlertTableViewController.xib */,
+			);
+			path = UIController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,6 +680,8 @@
 				27494C942818C214004F6851 /* CurrencyComponent.xib in Resources */,
 				27478CC12817F1A9001D73A7 /* LaunchScreen.storyboard in Resources */,
 				27494C902818BA2B004F6851 /* DefaultCurrencyComponent.xib in Resources */,
+				275B3BDA281969D3001E0FB7 /* ExchangeComponent.xib in Resources */,
+				275B3BE92819A17A001E0FB7 /* AlertTableViewController.xib in Resources */,
 				27478CBE2817F1A9001D73A7 /* Assets.xcassets in Resources */,
 				27478D032817F697001D73A7 /* BTableViewController.xib in Resources */,
 				27478CBC2817F1A7001D73A7 /* Main.storyboard in Resources */,
@@ -605,6 +715,9 @@
 				275B3BBC281949BA001E0FB7 /* TableViewSectionModel.swift in Sources */,
 				27478CFC2817F697001D73A7 /* BViperInteractorInterface.swift in Sources */,
 				27494C8C2818A33A004F6851 /* ContentManager.swift in Sources */,
+				275B3BD628194A12001E0FB7 /* ExchangeViperViewInterface.swift in Sources */,
+				275B3BD328194A12001E0FB7 /* ExchangeViperWireframeInterface.swift in Sources */,
+				275B3BD228194A12001E0FB7 /* ExchangeViperPresenter.swift in Sources */,
 				27478CFF2817F697001D73A7 /* BViperWireframe.swift in Sources */,
 				27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */,
 				27478D172817F781001D73A7 /* MainViperModuleInterface.swift in Sources */,
@@ -620,22 +733,29 @@
 				27478D2A2817F7AA001D73A7 /* UIManager.swift in Sources */,
 				27478D292817F7AA001D73A7 /* NavigationManager.swift in Sources */,
 				27478D2B2817F7AA001D73A7 /* ResponseBaseModel.swift in Sources */,
+				275B3BD9281969D3001E0FB7 /* ExchangeComponent.swift in Sources */,
 				27478D042817F697001D73A7 /* BTableViewController.swift in Sources */,
 				27478CFB2817F697001D73A7 /* BViperModuleInterface.swift in Sources */,
 				27494C932818C214004F6851 /* CurrencyComponent.swift in Sources */,
 				27478D012817F697001D73A7 /* BViperViewController.swift in Sources */,
 				27478D362817F7BA001D73A7 /* BBaseTableViewCell.swift in Sources */,
 				27478D352817F7BA001D73A7 /* TableViewCellModel.swift in Sources */,
+				275B3BD528194A12001E0FB7 /* ExchangeViperViewController.swift in Sources */,
 				27478D1D2817F781001D73A7 /* MainViperViewInterface.swift in Sources */,
 				27478D402817FEFC001D73A7 /* ApiError.swift in Sources */,
+				275B3BD128194A12001E0FB7 /* ExchangeViperInteractor.swift in Sources */,
 				27494C8A28189DE1004F6851 /* DateUtils.swift in Sources */,
 				27478D342817F7BA001D73A7 /* Constant.swift in Sources */,
 				27494C8F2818BA2B004F6851 /* DefaultCurrencyComponent.swift in Sources */,
+				275B3BCF28194A12001E0FB7 /* ExchangeViperModuleInterface.swift in Sources */,
 				27478D1E2817F781001D73A7 /* MainViperViewController.swift in Sources */,
+				275B3BE82819A17A001E0FB7 /* AlertTableViewController.swift in Sources */,
 				27478D182817F781001D73A7 /* MainViperInteractor.swift in Sources */,
 				27478D1B2817F781001D73A7 /* MainViperWireframeInterface.swift in Sources */,
 				27478CB52817F1A7001D73A7 /* AppDelegate.swift in Sources */,
 				275B3BB428192C17001E0FB7 /* Enums.swift in Sources */,
+				275B3BD028194A12001E0FB7 /* ExchangeViperInteractorInterface.swift in Sources */,
+				275B3BD428194A12001E0FB7 /* ExchangeViperWireframe.swift in Sources */,
 				27478D002817F697001D73A7 /* BViperWireFrameInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,7 +26,7 @@ class ServiceManager: NSObject {
     //MARK: Service Get Executer
     func getSupportedCodes(success: @escaping (CurrencyListModel?)->(), failure: @escaping (Error?) -> ()) {
         
-        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: "SupportedCodes")
+        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: "SupportedCodes") as? Data
         let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: "LastDate") as? String
         
         if dataModel != nil && lastDate != nil {
@@ -85,7 +85,7 @@ class ServiceManager: NSObject {
     
     func getEvents(currency:String?,success: @escaping (ResponseBaseModel?)->(), failure: @escaping (Error?) -> ()) {
         
-        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: "CurrencyRateModel")
+        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: "CurrencyRateModel") as? Date
         let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: "LastDate") as? String
         
         if dataModel != nil && lastDate != nil {

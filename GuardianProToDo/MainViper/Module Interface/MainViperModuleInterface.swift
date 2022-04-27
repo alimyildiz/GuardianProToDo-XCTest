@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainViperModuleInterface: BViperModuleInterface{
-
+    func goToExchangePage(currencyCode:String?)
 }

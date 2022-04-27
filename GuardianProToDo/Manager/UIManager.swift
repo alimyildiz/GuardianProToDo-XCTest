@@ -26,5 +26,36 @@ class UIManager: NSObject {
         
         return self.gl
     }
+    
+    func alertView(message:String?,controller:UIViewController){
+        
+        let alert = UIAlertController(title: "Alert!", message: "Are you sure want to remove your request?", preferredStyle: .alert)
+                        // Create the actions
+                let okAction = UIAlertAction(title: "YES", style: .destructive) {
+                       _ in
+                       print("Yes Pressed")
+                }
+                let cancelAction = UIAlertAction(title: "CANCEL", style: .cancel) {
+                       _ in
+                       print("Cancel Pressed")
+                    }
+                // Add the actions
+                alert.addAction(okAction)
+                alert.addAction(cancelAction)
+
+            controller.present(alert, animated: true, completion: nil)
+    }
+    
+    func alertTableViewController(selectedData:String? = nil, conservationRateList: [ConversionRates]? = nil, controller: UIViewController) {
+        
+        
+        let alertViewController = AlertTableViewController.init(nibName: "AlertTableViewController", bundle: nil)
+        alertViewController.providesPresentationContextTransitionStyle = true
+        alertViewController.definesPresentationContext = true
+        alertViewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        alertViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        //alertViewController.delegate = self
+        controller.present(alertViewController, animated: true, completion: nil)
+    }
 }
 

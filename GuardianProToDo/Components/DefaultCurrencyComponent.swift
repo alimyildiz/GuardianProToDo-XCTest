@@ -18,7 +18,7 @@ struct DefaultCurrencyComponentModel {
     }
 }
 
-class DefaultCurrencyComponent: BBaseTableViewCell {
+public class DefaultCurrencyComponent: BBaseTableViewCell {
 
     @IBOutlet weak var defaultCurrencyLabel: UILabel!
     @IBOutlet weak var defaultAmountLabel: UILabel!

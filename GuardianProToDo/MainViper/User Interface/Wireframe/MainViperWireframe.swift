@@ -13,5 +13,10 @@ public class MainViperWireframe: BViperWireframe{
 }
 
 extension MainViperWireframe: MainViperWireframeInterface{
-
+   
+    func goToExchangePage(currencyCode: String?) {
+        
+        let wireFrame = ExchangeViperWireframe(dataValue: currencyCode)
+        wireFrame.showController(fromController: controller)
+    }
 }

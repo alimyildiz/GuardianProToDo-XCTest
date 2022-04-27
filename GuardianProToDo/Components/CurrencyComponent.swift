@@ -21,7 +21,7 @@ struct CurrencyComponentModel {
         self.controller = controller
     }
 }
-class CurrencyComponent: BBaseTableViewCell {
+public class CurrencyComponent: BBaseTableViewCell {
 
     @IBOutlet weak var currencyFullName: UILabel!
     

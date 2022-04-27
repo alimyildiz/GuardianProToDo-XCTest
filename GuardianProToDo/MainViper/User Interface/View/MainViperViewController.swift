@@ -10,12 +10,26 @@ import UIKit
 
 class MainViperViewController: BViperViewController{
 
-    @objc var defaultCurrencyComponent: DefaultCurrencyComponent?
     @objc var currencyComponent: CurrencyComponent?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Currency List"
-       // navBarTitle = "enterKey".localized()
+    }
+    
+    /// #Seçilen para birimi ile
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        guard self.pageData != nil else {
+            return
+        }
+        
+        let supportedCodesList = (self.pageData as? [[SupportedCodes]])
+        
+        if let currencyModel = supportedCodesList?[indexPath.row].first {
+            
+            (presenter as? MainViperModuleInterface)?.goToExchangePage(currencyCode: currencyModel.currencyShortName)
+        }
     }
 }
 

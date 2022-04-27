@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainViperWireframeInterface: BViperWireFrameInterface{
-
+    func goToExchangePage(currencyCode: String?)
 }

@@ -17,5 +17,8 @@ extension MainViperPresenter: MainViperModuleInterface{
 }
 
 extension MainViperPresenter: MainViperInteractorOutput{
-    
+    func goToExchangePage(currencyCode:String?) {
+        
+        (wireFrame as? MainViperWireframeInterface)?.goToExchangePage(currencyCode: currencyCode)
+    }
 }
