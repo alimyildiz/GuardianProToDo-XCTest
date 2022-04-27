@@ -52,8 +52,8 @@
 		27494C932818C214004F6851 /* CurrencyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C912818C214004F6851 /* CurrencyComponent.swift */; };
 		27494C942818C214004F6851 /* CurrencyComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27494C922818C214004F6851 /* CurrencyComponent.xib */; };
 		275B3BB428192C17001E0FB7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BB328192C17001E0FB7 /* Enums.swift */; };
-		275B3BB728192CE7001E0FB7 /* TableViewSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BB628192CE7001E0FB7 /* TableViewSectionModel.swift */; };
 		275B3BB92819333B001E0FB7 /* CurrencyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BB82819333B001E0FB7 /* CurrencyListModel.swift */; };
+		275B3BBC281949BA001E0FB7 /* TableViewSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BBB281949BA001E0FB7 /* TableViewSectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,8 +123,8 @@
 		27494C912818C214004F6851 /* CurrencyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyComponent.swift; sourceTree = "<group>"; };
 		27494C922818C214004F6851 /* CurrencyComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyComponent.xib; sourceTree = "<group>"; };
 		275B3BB328192C17001E0FB7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		275B3BB628192CE7001E0FB7 /* TableViewSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionModel.swift; sourceTree = "<group>"; };
 		275B3BB82819333B001E0FB7 /* CurrencyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListModel.swift; sourceTree = "<group>"; };
+		275B3BBB281949BA001E0FB7 /* TableViewSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +213,7 @@
 		27478CE72817F697001D73A7 /* BaseViper */ = {
 			isa = PBXGroup;
 			children = (
-				275B3BB528192CE7001E0FB7 /* BaseModel */,
+				275B3BBA281949BA001E0FB7 /* BaseModel */,
 				27478CE82817F697001D73A7 /* BViewModel */,
 				27478CF82817F697001D73A7 /* BTableViewController */,
 			);
@@ -457,10 +457,10 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		275B3BB528192CE7001E0FB7 /* BaseModel */ = {
+		275B3BBA281949BA001E0FB7 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				275B3BB628192CE7001E0FB7 /* TableViewSectionModel.swift */,
+				275B3BBB281949BA001E0FB7 /* TableViewSectionModel.swift */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -599,10 +599,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275B3BB728192CE7001E0FB7 /* TableViewSectionModel.swift in Sources */,
 				27478D1C2817F781001D73A7 /* MainViperWireframe.swift in Sources */,
 				27478D2D2817F7AA001D73A7 /* ViewObjectModel.swift in Sources */,
 				27478CFD2817F697001D73A7 /* BViperInteractor.swift in Sources */,
+				275B3BBC281949BA001E0FB7 /* TableViewSectionModel.swift in Sources */,
 				27478CFC2817F697001D73A7 /* BViperInteractorInterface.swift in Sources */,
 				27494C8C2818A33A004F6851 /* ContentManager.swift in Sources */,
 				27478CFF2817F697001D73A7 /* BViperWireframe.swift in Sources */,
