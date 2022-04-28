@@ -17,7 +17,7 @@ class MainViperViewController: BViperViewController{
         self.navigationItem.title = BaseConstants.currencyListTitle
     }
     
-    /// #Seçilen para birimi ile
+    /// Select currency...
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         guard self.pageData != nil else {

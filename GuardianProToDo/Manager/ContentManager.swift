@@ -8,6 +8,7 @@
 import UIKit
 
 class ContentManager: NSObject {
+    
     public static let instance: ContentManager = ContentManager()
 
     let userDefaults = UserDefaults.standard

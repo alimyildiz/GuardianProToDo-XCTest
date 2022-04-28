@@ -9,7 +9,6 @@
 import Foundation
 
 struct UIConstant {
-    
     public static let wireFrameName = "Wireframe"
     public static let controllerBaseName = "ViewController"
     public static let interactorBaseName = "Interactor"
@@ -23,12 +22,12 @@ struct Desciption {
 }
 
 struct BaseConstants {
-    
     public static let finalAmount = "Final Amount: "
     public static let defaultAmount = "1 "
     public static let zero =  "0"
+    public static let timeLimit = "24"
     public static let confirmMessage = "Are you about to get %@ for %@ %@ Do you approve the transaction"
-    public static let warringMessage = "Please fill in the required fields"
+    public static let warringMessage = "Please, fill in the required fields"
     public static let exchangeTitle = "Exchange"
     public static let currencyListTitle = "Currency List"
     public static let dateUserDefaultKey = "LastDate"
@@ -40,6 +39,6 @@ struct BaseConstants {
     public static let ok = "OK"
     public static let cancel = "Cancel"
     public static let confirm = "Confirm"
-    
+    public static let exchangeButtonValidation = "Please,calculate currency and check final amount"
 }
 

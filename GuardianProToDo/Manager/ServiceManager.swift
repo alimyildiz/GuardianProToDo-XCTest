@@ -22,6 +22,7 @@ class ServiceManager: NSObject {
     var completionHandler: (() -> Void)?
     
     //MARK: Service Get Executer
+    /// GET all currency list.
     func getSupportedCodes(success: @escaping (CurrencyListModel?)->(), failure: @escaping (Error?) -> ()) {
         
         let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: BaseConstants.supportedCodesKey) as? Data
@@ -31,18 +32,18 @@ class ServiceManager: NSObject {
             
             let currentDate = DateUtils.instance.calculateHours(from: DateUtils.instance.convertStringToDate(dateString: lastDate!))
             
-            // 24 constant tanımlanacak...
-            if currentDate >= 24 {
+            // In cases greater than 24 hours...
+            if currentDate >= Int(BaseConstants.timeLimit)! {
                 self.executerSupportedCodes() {
                     success(self.currencyListModel)
                 }
             }else {
-                // 24 saatten küçük durumlarda...
+                // In less than 24 hours...
                 self.setSupportedCodeModel(dataModel: dataModel as? Data)
                 success(self.currencyListModel)
             }
         }else {
-            // Hiç kayıt yapılmadıysa burası çalışır...
+            // This place works if no registration is done...
             self.executerSupportedCodes() {
                 success(self.currencyListModel)
             }
@@ -65,10 +66,10 @@ class ServiceManager: NSObject {
                 
                 self.setSupportedCodeModel(dataModel: rateDataModel)
 
-                // Güncel data set edilir...
+                // Updated data is added...
                 ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: BaseConstants.supportedCodesKey)
                
-                // Güncel Saat Set edilir...
+                // Updated hour is added...
                 ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: BaseConstants.dateUserDefaultKey)
                 self.completionHandler!()
 
@@ -80,7 +81,7 @@ class ServiceManager: NSObject {
     
     }
     
-    
+    /// GET all events with currency.
     func getEvents(currency:String?,success: @escaping (ResponseBaseModel?)->(), failure: @escaping (Error?) -> ()) {
         
         let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: currency!) as? Date
@@ -90,18 +91,18 @@ class ServiceManager: NSObject {
             
             let currentDate = DateUtils.instance.calculateHours(from: DateUtils.instance.convertStringToDate(dateString: lastDate!))
             
-            // 24 constant tanımlanacak...
-            if currentDate >= 24 {
+            // In cases greater than 24 hours...
+            if currentDate >= Int(BaseConstants.timeLimit)! {
                 self.executerCurrencyRate(currency: currency) {
                     success(self.responseBaseModel!)
                 }
             }else {
-                // 24 saatten küçük durumlarda...
+                // In less than 24 hours...
                 self.setResponseModel(dataModel: dataModel as? Data)
                 success(self.responseBaseModel!)
             }
         }else {
-            // Hiç kayıt yapılmadıysa burası çalışır...
+            // This place works if no registration is done...
             self.executerCurrencyRate(currency: currency) {
                  success(self.responseBaseModel!)
             }
@@ -124,10 +125,10 @@ class ServiceManager: NSObject {
                     
                     self.setResponseModel(dataModel: rateDataModel)
 
-                    // Güncel data set edilir...
+                    // Updated date is added...
                     ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: currency!)
                    
-                    // Güncel Saat Set edilir...
+                    // Updated hour is added...
                     ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: BaseConstants.dateUserDefaultKey)
                     self.completionHandler!()
 
@@ -142,6 +143,7 @@ class ServiceManager: NSObject {
         }
     }
     
+    /// JsonDecoder for currency events
     func setResponseModel(dataModel: Data?)  {
         do {
             self.responseBaseModel = try! JSONDecoder().decode(ResponseBaseModel.self, from: dataModel!)
@@ -150,6 +152,7 @@ class ServiceManager: NSObject {
         }
     }
     
+    // Currency list JSONDecoding
     func setSupportedCodeModel(dataModel: Data?)  {
         do {
             self.currencyListModel = try! JSONDecoder().decode(CurrencyListModel.self, from: dataModel!)

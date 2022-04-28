@@ -20,7 +20,6 @@ class ConfirmViperViewController: BViperViewController{
         hideNavigationBar(animated: animated)
     }
 
-    
     func hideNavigationBar(animated: Bool){
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: animated)

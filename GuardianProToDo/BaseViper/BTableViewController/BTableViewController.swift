@@ -85,8 +85,8 @@ open class BTableViewController: UITableViewController {
         return name
     }
     
+    /// BaseTableview ulaşabilmek için kullanılır...
     func createCell(cell:BBaseTableViewCell,baseObject:ViewObjectModel,indexPath:IndexPath) -> BBaseTableViewCell {
-        //BaseTableview ulaşabilmek için kullanılır...
         cell.setValue(self, forKey: #keyPath(DelegateProtocol.controller))
         if let model = baseObject.viewData as? BComponentModel {
             model.createWithObject(cell: cell, baseObject: baseObject, indexPath: indexPath)

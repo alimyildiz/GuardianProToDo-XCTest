@@ -12,7 +12,9 @@ struct ConfirmComponentModel {
     var currencyInformation: String?
     var delegate: UIViewController?
     
-    init(currencyInformation: String?, delegate: UIViewController?) {
+    init(currencyInformation: String?,
+         delegate: UIViewController?)
+    {
         self.delegate = delegate
         self.currencyInformation = currencyInformation
     }

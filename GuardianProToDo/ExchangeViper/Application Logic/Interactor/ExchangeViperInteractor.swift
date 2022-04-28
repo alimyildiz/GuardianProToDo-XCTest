@@ -66,7 +66,7 @@ extension ExchangeViperInteractor: ExchangeViperInteractorInput {
     
     func updatedExchangeCurrencyCodeType(exchangeModel: ExchangeModel?) {
         
-        //Yeni bir seçim yalıpdığında ekran temizlenecek
+        //The screen will be cleared when a new selection is made.
         self.exchangeModel = exchangeModel!
         self.exchangeModel.finalAmount = nil
         self.exchangeModel.selectedNewCurrencyType = true
@@ -79,12 +79,12 @@ extension ExchangeViperInteractor: ExchangeViperInteractorInput {
         }
     }
     
-    /// #Update edilen currency name'lere göre info label güncellenir...
+    /// Update edilen currency name'lere göre info label güncellenir...
     func updateCurrencyInfo() {
         
         self.exchangeModel.currencyInfo = BaseConstants.defaultAmount + String(describing: (self.exchangeModel.mainCurrencyCode)!) + " = " + "\((self.exchangeModel.randomConvertCurrencyAmount)!)" + " " + (self.exchangeModel.randomConvertCurrencyCode)!
     }
-    
+    /// Conversion Rates Calculate
     func conversionRatesCalculate(amount: String?) {
         
         let totalCurrency = AmountUtils.instance.conversionRatesWillCalculate(currentAmount: amount, convertedCurrencyName: self.exchangeModel.randomConvertCurrencyCode, convertedCurrencyRate: self.exchangeModel.randomConvertCurrencyAmount)
@@ -92,6 +92,9 @@ extension ExchangeViperInteractor: ExchangeViperInteractorInput {
         self.exchangeModel.selectedNewCurrencyType = false
         self.exchangeModel.finalAmount = BaseConstants.finalAmount + totalCurrency
         self.exchangeModel.totalCurrency = totalCurrency
+    }
+    
+    func reloadCreateComponent() {
         self.createComponents()
     }
 }

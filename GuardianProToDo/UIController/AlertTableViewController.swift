@@ -44,7 +44,7 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
         animateView()
     }
     
-    /// #TableView Delegate
+    // MARK: - Tableview Delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (dataModel?.responseBaseModel?.conversionRatesList.count)!
     }
@@ -54,24 +54,20 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
         if let cell = tableView.dequeueReusableCell(withIdentifier: "AlertTableViewCell") as? AlertTableViewCell {
             
             let currencyCode = dataModel?.responseBaseModel?.conversionRatesList[indexPath.row].currencyName
-
-            if (dataModel?.selectedCurrencyType)! {// main selecteD
+            
+            if (dataModel?.selectedCurrencyType)! {// When main currency value selected
                 if (dataModel?.responseBaseModel?.conversionRatesList.count)! > 0 {
 
                     if currencyCode == (dataModel?.mainCurrencyCode)! {
-                        
-                        print("\(String(describing: currencyCode))" + "=" + ( dataModel?.mainCurrencyCode)!)
-
                         cell.checkBoxIcon.image = UIImage(named: "checkBoxIcon")
                     }else {
                         cell.checkBoxIcon.image = nil
                     }
                     cell.currencyNameLabel.text = currencyCode
                 }
-            }else {//converted currrency
+            }else {// When convert currency value selected
                 
                 if (dataModel?.responseBaseModel?.conversionRatesList.count)! > 0 {
-                    print(dataModel?.randomConvertCurrencyCode)
 
                     if currencyCode == (dataModel?.randomConvertCurrencyCode)! {
                         cell.checkBoxIcon.image = UIImage(named: "checkBoxIcon")
@@ -81,7 +77,6 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
                     cell.currencyNameLabel.text = currencyCode
                 }
             }
-            
             return cell
         }
         
@@ -102,7 +97,6 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
         }
     }
     
-    
     func setupView() {
         alertView.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
@@ -118,10 +112,6 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
     }
     
     @IBAction func onTapCancelButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func onTapOkButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
 

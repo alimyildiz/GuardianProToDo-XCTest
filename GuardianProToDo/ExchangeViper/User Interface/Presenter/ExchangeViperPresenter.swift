@@ -21,6 +21,10 @@ extension ExchangeViperPresenter: ExchangeViperModuleInterface{
     func conversionRatesCalculate(amount: String?) {
         (interactor as? ExchangeViperInteractorInput)?.conversionRatesCalculate(amount: amount)
     }
+    
+    func reloadCreateComponent() {
+        (interactor as? ExchangeViperInteractorInput)?.reloadCreateComponent()
+    }
 }
 
 extension ExchangeViperPresenter: ExchangeViperInteractorOutput{

@@ -11,11 +11,11 @@ public class TableViewCellModel: NSObject {
     
    public var componentList: [ViewObjectModel]!
     
-    public var sectionList: [TableViewSectionModel]!
+   public var sectionList: [TableViewSectionModel]!
     
-    public var header: ViewObjectModel?
+   public var header: ViewObjectModel?
      
-    public var footer: ViewObjectModel?
+   public var footer: ViewObjectModel?
     
    convenience public init(_ componentList:[ViewObjectModel]?) {
         self.init()
@@ -43,7 +43,6 @@ public class TableViewCellModel: NSObject {
         if let compList = getComponentList(type: type, section: section){
             return compList.last
         }
-        
         return nil
     }
     
@@ -56,7 +55,6 @@ public class TableViewCellModel: NSObject {
                 list.append(TableViewSectionModel(componentList: compList))
             }
         }
-        
         return list
     }
     
@@ -67,7 +65,6 @@ public class TableViewCellModel: NSObject {
                 set.insert(section)
             }
         }
-        
         return set.sorted()
     }
 }

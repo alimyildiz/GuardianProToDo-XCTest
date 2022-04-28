@@ -11,13 +11,13 @@ protocol AlertViewDelegate {
     func goToConfirmPage()
 }
 
-
 class UIManager: NSObject {
     
     public static let instance:UIManager = UIManager()
     
     var delegate:AlertViewDelegate?
     
+    /// Only message AlertView
     func alertView(message:String?,controller:UIViewController) {
         
         let alert = UIAlertController(title: BaseConstants.warningTitle, message: message, preferredStyle: .alert)
@@ -31,6 +31,7 @@ class UIManager: NSObject {
         controller.present(alert, animated: true, completion: nil)
     }
     
+    /// Confirm AlertView
     func alertViewConfirm(message:String?, controller:UIViewController) {
         
         self.delegate = controller as? AlertViewDelegate
@@ -52,6 +53,7 @@ class UIManager: NSObject {
         controller.present(alert, animated: true, completion: nil)
     }
     
+    /// Custom AlertView  for tableview single select currency code.
     func alertTableViewController(selectedData:String? = nil, data: Any?, controller: UIViewController) {
         
         let alertViewController = AlertTableViewController.init(nibName: "AlertTableViewController", bundle: nil)
@@ -62,6 +64,22 @@ class UIManager: NSObject {
         alertViewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         alertViewController.delegate = controller as? CustomAlertViewDelegate
         controller.present(alertViewController, animated: true, completion: nil)
+    }
+    
+    /// Toolbar button textField'e eklenir.Done buttonu ile kullanıcı currency hesabı yapar...
+    func toolBar(controller: UIViewController) -> UIToolbar {
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        flexibleSpace.width = controller.view.frame.size.width
+
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: controller, action: #selector(ExchangeViperViewController.doneClicked))
+    
+        toolBar.setItems([flexibleSpace,doneButton], animated: false)
+        
+        return toolBar
     }
 }
 

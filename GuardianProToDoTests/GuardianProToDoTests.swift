@@ -20,6 +20,8 @@ class GuardianProToDoTests: XCTestCase {
         super.tearDown()
     }
 
+    // MARK: - XCTest Case Methods
+
     func testSupportedCodes() {
         
         expectation = self.expectation(description: "SupportedCodesList")

@@ -9,13 +9,17 @@ import UIKit
 
 struct CurrencyComponentModel {
     
-    var currencyShortName: String?
-    var currencyFullName: String?
+    typealias CurrencyType = String?
+    
+    var currencyShortName: CurrencyType
+    var currencyFullName: CurrencyType
 
     var controller: UIViewController?
     
-    init(currencyShortName: String? = nil ,currencyFullName: String? = nil,controller: UIViewController? = nil){
-        
+    init(currencyShortName: String? = nil ,
+         currencyFullName: String? = nil,
+         controller: UIViewController? = nil)
+    {
         self.currencyShortName = currencyShortName
         self.currencyFullName = currencyFullName
         self.controller = controller
@@ -35,13 +39,12 @@ public class CurrencyComponent: BBaseTableViewCell {
 
         // Configure the view for the selected state
     }
+    
     override public func createViewObject(baseObject: Any!, indexPath: IndexPath) {
         super.createViewObject(baseObject: baseObject, indexPath: indexPath)
         
         if let model = self.baseObject.viewData as? CurrencyComponentModel {
             self.currencyFullName.text = model.currencyFullName
-
         }
     }
-    
 }

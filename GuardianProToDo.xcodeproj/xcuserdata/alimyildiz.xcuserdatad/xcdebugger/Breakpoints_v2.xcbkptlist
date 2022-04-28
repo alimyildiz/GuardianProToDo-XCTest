@@ -7,20 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BDFE125B-FBF8-4A0D-8685-69EAA8691BB5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GuardianProToDo/ExchangeViper/User Interface/View/ExchangeViperViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "AB16ECE7-9D24-48DE-8F45-6A7C747631FA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -28,8 +14,8 @@
             filePath = "GuardianProToDo/Components/ExchangeComponent.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103">
+            startingLineNumber = "109"
+            endingLineNumber = "109">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,10 +44,10 @@
             filePath = "GuardianProToDo/ExchangeViper/User Interface/View/ExchangeViperViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "ExchangeViperViewController"
-            landmarkType = "21">
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "goToConfirmPage()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,72 +92,10 @@
             filePath = "GuardianProToDoTests/GuardianProToDoTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "testCurrencyEvents()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2DE514AE-233D-4AE2-8DDB-DA31665C8E2D - ec728bfb3daf4a5e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "37">
-               </Location>
-               <Location
-                  uuid = "2DE514AE-233D-4AE2-8DDB-DA31665C8E2D - ec728bfb3daf4a7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  uuid = "2DE514AE-233D-4AE2-8DDB-DA31665C8E2D - ec728bfb3daf4a5e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "29">
-               </Location>
-               <Location
-                  uuid = "2DE514AE-233D-4AE2-8DDB-DA31665C8E2D - ec728bfb3daf4a7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -184,72 +108,10 @@
             filePath = "GuardianProToDoTests/GuardianProToDoTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "testCurrencyEvents()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B980F2E5-5236-4DBF-AC92-2F0FD4DEB50D - ec728bfb3daf4a1c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "B980F2E5-5236-4DBF-AC92-2F0FD4DEB50D - ec728bfb3daf4a7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  uuid = "B980F2E5-5236-4DBF-AC92-2F0FD4DEB50D - ec728bfb3daf4a1c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "B980F2E5-5236-4DBF-AC92-2F0FD4DEB50D - ec728bfb3daf4a7f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -262,87 +124,10 @@
             filePath = "GuardianProToDoTests/GuardianProToDoTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "testCurrencyEvents()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C1123EB3-6ACD-4E49-B527-A78EA85446A6 - ac25cd4da18fee5f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "69">
-               </Location>
-               <Location
-                  uuid = "C1123EB3-6ACD-4E49-B527-A78EA85446A6 - ac25cd4da18fd1f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "69">
-               </Location>
-               <Location
-                  uuid = "C1123EB3-6ACD-4E49-B527-A78EA85446A6 - ac25cd4da18fd191"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "38">
-               </Location>
-               <Location
-                  uuid = "C1123EB3-6ACD-4E49-B527-A78EA85446A6 - ac25cd4da18fd1b0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "38">
-               </Location>
-               <Location
-                  uuid = "C1123EB3-6ACD-4E49-B527-A78EA85446A6 - ac25cd4da18fd1f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "71">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -355,72 +140,74 @@
             filePath = "GuardianProToDoTests/GuardianProToDoTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "testCurrencyEvents()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7B5A3EE2-D1C4-4BAE-B709-8163D4A671EF - e08e1fe55aea1c20"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;GuardianProToDo.ResponseBaseModel&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "946">
-               </Location>
-               <Location
-                  uuid = "7B5A3EE2-D1C4-4BAE-B709-8163D4A671EF - e08e1fe55aea1ddf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;GuardianProToDo.ResponseBaseModel&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "390">
-               </Location>
-               <Location
-                  uuid = "7B5A3EE2-D1C4-4BAE-B709-8163D4A671EF - e08e1fe55aea1c20"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;GuardianProToDo.ResponseBaseModel&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "801">
-               </Location>
-               <Location
-                  uuid = "7B5A3EE2-D1C4-4BAE-B709-8163D4A671EF - e08e1fe55aea1c20"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;GuardianProToDo.ResponseBaseModel&gt;) -&gt; () in GuardianProToDoTests.GuardianProToDoTests.testCurrencyEvents() -&gt; ()"
-                  moduleName = "GuardianProToDoTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alimyildiz/Desktop/Proje%20Ars%CC%A7iv/GuardianProToDo/GuardianProToDoTests/GuardianProToDoTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "933">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6283E49B-5A6F-4E71-91FD-0A96A8270121"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuardianProToDo/ExchangeViper/User Interface/View/ExchangeViperViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "doneClicked()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BB8A2C6-4A04-4D2C-B500-D709C23C9587"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuardianProToDo/UIController/AlertTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "onTapCancelButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "606B9CDF-7BB5-4AD7-B6E1-2DCB9AEBC830"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuardianProToDo/ExchangeViper/User Interface/View/ExchangeViperViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "exchangeAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E6A3E23-2EB5-4495-9649-84B019C947E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuardianProToDo/ExchangeViper/User Interface/View/ExchangeViperViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "exchangeAction()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

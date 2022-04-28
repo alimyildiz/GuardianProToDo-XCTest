@@ -11,4 +11,5 @@ protocol ExchangeViperModuleInterface: BViperModuleInterface{
     func updatedExchangeCurrencyCodeType(exchangeModel: ExchangeModel?)
     func conversionRatesCalculate(amount: String?)
     func goToConfirmPage(exchangeModel: ExchangeModel?)
+    func reloadCreateComponent() 
 }
