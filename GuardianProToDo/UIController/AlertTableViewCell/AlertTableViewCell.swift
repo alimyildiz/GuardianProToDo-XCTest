@@ -9,14 +9,14 @@ import UIKit
 
 class AlertTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var currencyNameLabel: UILabel!
+    
+    @IBOutlet weak var checkBoxIcon: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    @IBOutlet weak var currencyNameLabel: UILabel!
-    
-    @IBOutlet weak var checkBoxIcon: UIImageView!
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

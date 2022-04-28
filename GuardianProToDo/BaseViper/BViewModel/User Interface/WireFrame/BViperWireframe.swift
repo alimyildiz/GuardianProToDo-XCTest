@@ -6,7 +6,6 @@
 //
 
 import UIKit
-//import ObjectMapper
 
 open class BViperWireframe: NSObject {
     
@@ -30,11 +29,6 @@ open class BViperWireframe: NSObject {
     public required init(dataValue: Any? = nil, modelName:String? = nil) {
         super.init()
         let val = dataValue
-        
-      /*  if let modelName = modelName , let dataValue = dataValue as? [String:Any] {
-            let modelClass = NSClassFromString(modelName) as! Mappable.Type
-            val = modelClass.init(JSON: dataValue)
-        }*/
         
         projectName = self.description.components(separatedBy: ".")[0].replacingOccurrences(of: "<", with: "")
         

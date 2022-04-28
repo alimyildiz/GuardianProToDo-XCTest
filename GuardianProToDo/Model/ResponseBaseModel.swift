@@ -1,9 +1,8 @@
 //
 //  ResponseBaseModel.swift
-//  MeditopiaTask
+//  GuardianProToDo
 //
-//  Created by Alim Yıldız on 3/27/21.
-//  Copyright © 2021 Alim Yıldız. All rights reserved.
+//  Created by Alim Yıldız on 4/27/22.
 //
 
 import Foundation
