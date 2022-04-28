@@ -7,4 +7,5 @@ GuardianPro interview Case
 - Bu event'lar yönetebilmek için AFNetworking servis için ve Realm Mongo,KeyChain etc. gibi birçoğundan da yardım alınabilir.
 - Proje TableView alt yapısı ile oluşturuldu ve component'ler ile ekranlar tasarlandı.
 - Managers,Enams,Constants,Models gibi class'lara yer verildi.
+- Dynimic yatıpa yer verildi.Listeden seçilen currency ile Exchange sayfasında bütün currency kurlarını hesaplayabilirsiniz.
 
