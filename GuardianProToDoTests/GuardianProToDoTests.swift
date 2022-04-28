@@ -22,11 +22,11 @@ class GuardianProToDoTests: XCTestCase {
 
     func testSupportedCodes() {
         
-        let expectation: XCTestExpectation = self.expectation(description: "SupportedCodesList")
+        expectation = self.expectation(description: "SupportedCodesList")
         
         ServiceManager.sharedService.getSupportedCodes { response in
             
-            expectation.fulfill() // if this happens, the test must fail
+            self.expectation!.fulfill() // if this happens, the test must fail
 
             self.waitForExpectations(timeout: 3)
 
@@ -40,7 +40,37 @@ class GuardianProToDoTests: XCTestCase {
                 print(error)
             }
         } failure: { error in
-            expectation.fulfill()
+            self.expectation!.fulfill()
+            XCTFail((error?.localizedDescription)!)
+        }
+    }
+    
+    func testCurrencyEvents() {
+        
+
+        ServiceManager.sharedService.getEvents(currency: "USD") { response in
+
+            self.expectation = self.expectation(description: "currencyEvents")
+
+            DispatchQueue.main.async {
+                XCTFail("bar")
+
+                self.expectation!.fulfill()
+            }
+            
+            self.waitForExpectations(timeout: 3)
+
+            XCTAssertNotNil(response, "Data is nil")
+
+            do {
+                XCTAssertNotNil((response?.conversionRatesList.count)! > 0, "SupportedCodes is not nil")
+                XCTAssertTrue(response?.conversionRatesList != nil)
+    
+            } catch let error {
+                print(error)
+            }
+        } failure: { error in
+            self.expectation!.fulfill()
             XCTFail((error?.localizedDescription)!)
         }
     }
