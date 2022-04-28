@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ExchangeViperWireframeInterface: BViperWireFrameInterface{
-
+    func goToConfirmPage(exchangeModel: ExchangeModel?)
 }

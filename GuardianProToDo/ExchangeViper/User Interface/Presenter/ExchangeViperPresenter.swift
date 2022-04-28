@@ -17,8 +17,15 @@ extension ExchangeViperPresenter: ExchangeViperModuleInterface{
         
         (interactor as? ExchangeViperInteractorInput)?.updatedExchangeCurrencyCodeType(exchangeModel: exchangeModel)
     }
+    
+    func conversionRatesCalculate(amount: String?) {
+        (interactor as? ExchangeViperInteractorInput)?.conversionRatesCalculate(amount: amount)
+    }
 }
 
 extension ExchangeViperPresenter: ExchangeViperInteractorOutput{
     
+    func goToConfirmPage(exchangeModel: ExchangeModel?) {
+        (wireFrame as? ExchangeViperWireframeInterface)?.goToConfirmPage(exchangeModel: exchangeModel)
+    }
 }

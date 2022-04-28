@@ -5,94 +5,98 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
-         <BreakpointContent
-            uuid = "DE038402-532E-4F4C-9FB5-110FD09C430E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            breakpointStackSelectionBehavior = "1"
-            scope = "0"
-            stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F0C60BAD-33DD-4DD8-B5FA-6EEE8EE5304A"
+            uuid = "4ADAFE5D-3CD6-4F20-AF2D-1C374691E29C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GuardianProToDo/ExchangeViper/Application Logic/Interactor/ExchangeViperInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "updatedExchangeCurrencyCodeType(exchangeModel:)"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "conversionRatesCalculate(amount:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5F8B82B1-3E65-41E6-9347-3EE8939A1938"
+            uuid = "6874B5BE-8B4C-4BCB-9B0B-F8001CF11C35"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GuardianProToDo/ExchangeViper/Application Logic/Interactor/ExchangeViperInteractor.swift"
+            filePath = "GuardianProToDo/ExchangeViper/User Interface/View/ExchangeViperViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "getAllEventsMethod(currencyCode:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "exchangeAction()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6FE2DBE6-A696-438D-A1B0-2F3C3E3F42BC"
+            uuid = "3D717E2B-3B3C-4D8A-863B-11705CA7F696"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GuardianProToDo/ExchangeViper/Application Logic/Interactor/ExchangeViperInteractor.swift"
+            filePath = "GuardianProToDo/ExchangeViper/User Interface/View/ExchangeViperViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "createComponents()"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "goToConfirmPage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7592C0CD-E3C2-4382-8B68-B983DD9CFEEF"
+            uuid = "6F008F07-D0DB-46C9-998A-EEDEC551B990"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GuardianProToDo/Components/ExchangeComponent.swift"
+            filePath = "GuardianProToDo/Manager/UIManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "createViewObject(baseObject:indexPath:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "alertViewConfirm(message:controller:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F080C421-57D6-4C0F-A2A6-1E63CFE6730D"
+            uuid = "545B51E7-0E1E-4594-A905-CE774C13CCDF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GuardianProToDo/ExchangeViper/Application Logic/Interactor/ExchangeViperInteractor.swift"
+            filePath = "GuardianProToDo/Components/ConfirmComponent.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getAllEventsMethod(currencyCode:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "backActionButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36A58F62-93C4-4522-BAFD-55A5D35D4328"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuardianProToDo/ConfirmViper/Application Logic/Interactor/ConfirmViperInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getViewData(data:controller:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

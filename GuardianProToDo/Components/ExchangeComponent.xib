@@ -80,7 +80,7 @@
                                 </constraints>
                                 <color key="textColor" systemColor="linkColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="-1" id="Gmc-jp-CzB"/>
                                 </connections>

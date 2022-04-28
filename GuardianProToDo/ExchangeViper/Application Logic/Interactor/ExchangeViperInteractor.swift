@@ -13,7 +13,7 @@ class ExchangeViperInteractor: BViperInteractor
 {
     var exchangeModel = ExchangeModel()
     var controller: UIViewController?
-     
+         
     override func getViewData(data: Any?, controller: UIViewController) {
         self.controller = controller
         self.getAllEventsMethod(currencyCode: data as? String)
@@ -27,9 +27,13 @@ class ExchangeViperInteractor: BViperInteractor
             self.exchangeModel.responseBaseModel = data
             
             self.exchangeModel.randomConvertCurrencyCode = (self.exchangeModel.responseBaseModel?.conversionRatesList.first?.currencyName)!
-            self.exchangeModel.randomConvertCurrencyAmount = String(describing: self.exchangeModel.responseBaseModel?.conversionRatesList.first?.currencyRate)
+            
+            self.exchangeModel.randomConvertCurrencyAmount = String(describing: (self.exchangeModel.responseBaseModel?.conversionRatesList.first?.currencyRate)!)
+            
             self.exchangeModel.mainCurrencyCode = self.exchangeModel.responseBaseModel?.baseCode
+            
             self.updateCurrencyInfo()
+            
             DispatchQueue.main.async {
                 self.createComponents()
             }
@@ -48,7 +52,8 @@ class ExchangeViperInteractor: BViperInteractor
                                              finalAmount: self.exchangeModel.finalAmount,
                                              currencyInfo: self.exchangeModel.currencyInfo,
                                              delegate: self.controller!),
-                data: nil,
+                data: exchangeModel,
+                parameterName: #keyPath(ExchangeViperViewController.exchangeComponent),
                 section: 0,
                 selectedData: nil))
         
@@ -59,16 +64,31 @@ class ExchangeViperInteractor: BViperInteractor
 extension ExchangeViperInteractor: ExchangeViperInteractorInput {
     
     func updatedExchangeCurrencyCodeType(exchangeModel: ExchangeModel?) {
+        
         self.exchangeModel = exchangeModel!
+        
         if (self.exchangeModel.selectedCurrencyTye)! {
             self.getAllEventsMethod(currencyCode: self.exchangeModel.mainCurrencyCode)
         }else {
             self.updateCurrencyInfo()
             self.createComponents()
         }
+
+        self.exchangeModel.finalAmount = nil
     }
+    
     /// #Update edilen currency name'lere göre info label güncellenir...
     func updateCurrencyInfo() {
-        self.exchangeModel.currencyInfo = "1 " + String(describing: (self.exchangeModel.mainCurrencyCode)!) + " = " + self.exchangeModel.randomConvertCurrencyAmount + " " + self.exchangeModel.randomConvertCurrencyCode
+        
+        self.exchangeModel.currencyInfo = "1 " + String(describing: (self.exchangeModel.mainCurrencyCode)!) + " = " + "\((self.exchangeModel.randomConvertCurrencyAmount)!)" + " " + (self.exchangeModel.randomConvertCurrencyCode)!
+    }
+    
+    func conversionRatesCalculate(amount: String?) {
+        
+        let totalCurrency = AmountUtils.instance.conversionRatesWillCalculate(currentAmount: amount, convertedCurrencyName: self.exchangeModel.randomConvertCurrencyCode, convertedCurrencyRate: self.exchangeModel.randomConvertCurrencyAmount)
+        
+        self.exchangeModel.finalAmount = "Final Amount: " + totalCurrency
+        self.exchangeModel.totalCurrency = totalCurrency
+        self.createComponents()
     }
 }

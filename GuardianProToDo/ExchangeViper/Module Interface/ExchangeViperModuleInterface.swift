@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
 protocol ExchangeViperModuleInterface: BViperModuleInterface{
-    func updatedExchangeCurrencyCodeType(exchangeModel:ExchangeModel?)
+    func updatedExchangeCurrencyCodeType(exchangeModel: ExchangeModel?)
+    func conversionRatesCalculate(amount: String?)
+    func goToConfirmPage(exchangeModel: ExchangeModel?)
 }

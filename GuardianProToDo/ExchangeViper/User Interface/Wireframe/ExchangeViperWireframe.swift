@@ -13,5 +13,10 @@ public class ExchangeViperWireframe: BViperWireframe{
 }
 
 extension ExchangeViperWireframe: ExchangeViperWireframeInterface{
-
+    
+    func goToConfirmPage(exchangeModel: ExchangeModel?) {
+        
+        let wireFrame = ConfirmViperWireframe(dataValue: exchangeModel)
+        wireFrame.showController(fromController: controller)
+    }
 }

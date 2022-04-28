@@ -10,6 +10,17 @@
 		27451C6F2819CD78002F2CD3 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C6D2819CD78002F2CD3 /* AlertTableViewCell.swift */; };
 		27451C702819CD78002F2CD3 /* AlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27451C6E2819CD78002F2CD3 /* AlertTableViewCell.xib */; };
 		27451C722819D3F7002F2CD3 /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C712819D3F7002F2CD3 /* ExchangeModel.swift */; };
+		27451C74281A0094002F2CD3 /* AmountUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C73281A0094002F2CD3 /* AmountUtils.swift */; };
+		27451C88281A3428002F2CD3 /* ConfirmViperModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C7A281A3428002F2CD3 /* ConfirmViperModuleInterface.swift */; };
+		27451C89281A3428002F2CD3 /* ConfirmViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C7D281A3428002F2CD3 /* ConfirmViperInteractor.swift */; };
+		27451C8A281A3428002F2CD3 /* ConfirmViperInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C7E281A3428002F2CD3 /* ConfirmViperInteractorInterface.swift */; };
+		27451C8B281A3428002F2CD3 /* ConfirmViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C81281A3428002F2CD3 /* ConfirmViperPresenter.swift */; };
+		27451C8C281A3428002F2CD3 /* ConfirmViperWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C83281A3428002F2CD3 /* ConfirmViperWireframeInterface.swift */; };
+		27451C8D281A3428002F2CD3 /* ConfirmViperWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C84281A3428002F2CD3 /* ConfirmViperWireframe.swift */; };
+		27451C8E281A3428002F2CD3 /* ConfirmViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C86281A3428002F2CD3 /* ConfirmViperViewController.swift */; };
+		27451C8F281A3428002F2CD3 /* ConfirmViperViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C87281A3428002F2CD3 /* ConfirmViperViewInterface.swift */; };
+		27451C92281A3492002F2CD3 /* ConfirmComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27451C90281A3492002F2CD3 /* ConfirmComponent.swift */; };
+		27451C93281A3492002F2CD3 /* ConfirmComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27451C91281A3492002F2CD3 /* ConfirmComponent.xib */; };
 		27478CB52817F1A7001D73A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CB42817F1A7001D73A7 /* AppDelegate.swift */; };
 		27478CB92817F1A7001D73A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478CB82817F1A7001D73A7 /* ViewController.swift */; };
 		27478CBC2817F1A7001D73A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27478CBA2817F1A7001D73A7 /* Main.storyboard */; };
@@ -50,8 +61,6 @@
 		27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */; };
 		27494C8A28189DE1004F6851 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8928189DE1004F6851 /* DateUtils.swift */; };
 		27494C8C2818A33A004F6851 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8B2818A33A004F6851 /* ContentManager.swift */; };
-		27494C8F2818BA2B004F6851 /* DefaultCurrencyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8D2818BA2B004F6851 /* DefaultCurrencyComponent.swift */; };
-		27494C902818BA2B004F6851 /* DefaultCurrencyComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27494C8E2818BA2B004F6851 /* DefaultCurrencyComponent.xib */; };
 		27494C932818C214004F6851 /* CurrencyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C912818C214004F6851 /* CurrencyComponent.swift */; };
 		27494C942818C214004F6851 /* CurrencyComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27494C922818C214004F6851 /* CurrencyComponent.xib */; };
 		275B3BB428192C17001E0FB7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B3BB328192C17001E0FB7 /* Enums.swift */; };
@@ -92,6 +101,17 @@
 		27451C6D2819CD78002F2CD3 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		27451C6E2819CD78002F2CD3 /* AlertTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
 		27451C712819D3F7002F2CD3 /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
+		27451C73281A0094002F2CD3 /* AmountUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountUtils.swift; sourceTree = "<group>"; };
+		27451C7A281A3428002F2CD3 /* ConfirmViperModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperModuleInterface.swift; sourceTree = "<group>"; };
+		27451C7D281A3428002F2CD3 /* ConfirmViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperInteractor.swift; sourceTree = "<group>"; };
+		27451C7E281A3428002F2CD3 /* ConfirmViperInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperInteractorInterface.swift; sourceTree = "<group>"; };
+		27451C81281A3428002F2CD3 /* ConfirmViperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperPresenter.swift; sourceTree = "<group>"; };
+		27451C83281A3428002F2CD3 /* ConfirmViperWireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperWireframeInterface.swift; sourceTree = "<group>"; };
+		27451C84281A3428002F2CD3 /* ConfirmViperWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperWireframe.swift; sourceTree = "<group>"; };
+		27451C86281A3428002F2CD3 /* ConfirmViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperViewController.swift; sourceTree = "<group>"; };
+		27451C87281A3428002F2CD3 /* ConfirmViperViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViperViewInterface.swift; sourceTree = "<group>"; };
+		27451C90281A3492002F2CD3 /* ConfirmComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmComponent.swift; sourceTree = "<group>"; };
+		27451C91281A3492002F2CD3 /* ConfirmComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmComponent.xib; sourceTree = "<group>"; };
 		27478CB12817F1A7001D73A7 /* GuardianProToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardianProToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27478CB42817F1A7001D73A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27478CB82817F1A7001D73A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,8 +156,6 @@
 		27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		27494C8928189DE1004F6851 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		27494C8B2818A33A004F6851 /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
-		27494C8D2818BA2B004F6851 /* DefaultCurrencyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCurrencyComponent.swift; sourceTree = "<group>"; };
-		27494C8E2818BA2B004F6851 /* DefaultCurrencyComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCurrencyComponent.xib; sourceTree = "<group>"; };
 		27494C912818C214004F6851 /* CurrencyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyComponent.swift; sourceTree = "<group>"; };
 		27494C922818C214004F6851 /* CurrencyComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyComponent.xib; sourceTree = "<group>"; };
 		275B3BB328192C17001E0FB7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -191,6 +209,77 @@
 			path = AlertTableViewCell;
 			sourceTree = "<group>";
 		};
+		27451C78281A3428002F2CD3 /* ConfirmViper */ = {
+			isa = PBXGroup;
+			children = (
+				27451C79281A3428002F2CD3 /* Module Interface */,
+				27451C7B281A3428002F2CD3 /* Application Logic */,
+				27451C7F281A3428002F2CD3 /* User Interface */,
+			);
+			path = ConfirmViper;
+			sourceTree = "<group>";
+		};
+		27451C79281A3428002F2CD3 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				27451C7A281A3428002F2CD3 /* ConfirmViperModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		27451C7B281A3428002F2CD3 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				27451C7C281A3428002F2CD3 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		27451C7C281A3428002F2CD3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				27451C7D281A3428002F2CD3 /* ConfirmViperInteractor.swift */,
+				27451C7E281A3428002F2CD3 /* ConfirmViperInteractorInterface.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		27451C7F281A3428002F2CD3 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				27451C80281A3428002F2CD3 /* Presenter */,
+				27451C82281A3428002F2CD3 /* Wireframe */,
+				27451C85281A3428002F2CD3 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		27451C80281A3428002F2CD3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				27451C81281A3428002F2CD3 /* ConfirmViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		27451C82281A3428002F2CD3 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				27451C83281A3428002F2CD3 /* ConfirmViperWireframeInterface.swift */,
+				27451C84281A3428002F2CD3 /* ConfirmViperWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		27451C85281A3428002F2CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27451C86281A3428002F2CD3 /* ConfirmViperViewController.swift */,
+				27451C87281A3428002F2CD3 /* ConfirmViperViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		27478CA82817F1A7001D73A7 = {
 			isa = PBXGroup;
 			children = (
@@ -214,10 +303,11 @@
 		27478CB32817F1A7001D73A7 /* GuardianProToDo */ = {
 			isa = PBXGroup;
 			children = (
-				275B3BDB28199D09001E0FB7 /* UIController */,
 				27478CE72817F697001D73A7 /* BaseViper */,
-				27478D072817F781001D73A7 /* MainViper */,
 				275B3BBF28194A12001E0FB7 /* ExchangeViper */,
+				27478D072817F781001D73A7 /* MainViper */,
+				27451C78281A3428002F2CD3 /* ConfirmViper */,
+				275B3BDB28199D09001E0FB7 /* UIController */,
 				27494C8828189D91004F6851 /* Utils */,
 				27478D372817FEFC001D73A7 /* API */,
 				27478D2E2817F7BA001D73A7 /* Common */,
@@ -456,12 +546,12 @@
 			children = (
 				27478D312817F7BA001D73A7 /* UIModel */,
 				27478D332817F7BA001D73A7 /* BBaseTableViewCell.swift */,
-				27494C8D2818BA2B004F6851 /* DefaultCurrencyComponent.swift */,
-				27494C8E2818BA2B004F6851 /* DefaultCurrencyComponent.xib */,
 				27494C912818C214004F6851 /* CurrencyComponent.swift */,
 				27494C922818C214004F6851 /* CurrencyComponent.xib */,
 				275B3BD7281969D3001E0FB7 /* ExchangeComponent.swift */,
 				275B3BD8281969D3001E0FB7 /* ExchangeComponent.xib */,
+				27451C90281A3492002F2CD3 /* ConfirmComponent.swift */,
+				27451C91281A3492002F2CD3 /* ConfirmComponent.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -489,6 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				27494C8928189DE1004F6851 /* DateUtils.swift */,
+				27451C73281A0094002F2CD3 /* AmountUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -696,9 +787,9 @@
 			files = (
 				27494C942818C214004F6851 /* CurrencyComponent.xib in Resources */,
 				27478CC12817F1A9001D73A7 /* LaunchScreen.storyboard in Resources */,
-				27494C902818BA2B004F6851 /* DefaultCurrencyComponent.xib in Resources */,
 				275B3BDA281969D3001E0FB7 /* ExchangeComponent.xib in Resources */,
 				27451C702819CD78002F2CD3 /* AlertTableViewCell.xib in Resources */,
+				27451C93281A3492002F2CD3 /* ConfirmComponent.xib in Resources */,
 				275B3BE92819A17A001E0FB7 /* AlertTableViewController.xib in Resources */,
 				27478CBE2817F1A9001D73A7 /* Assets.xcassets in Resources */,
 				27478D032817F697001D73A7 /* BTableViewController.xib in Resources */,
@@ -727,6 +818,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27451C8B281A3428002F2CD3 /* ConfirmViperPresenter.swift in Sources */,
 				27478D1C2817F781001D73A7 /* MainViperWireframe.swift in Sources */,
 				27478D2D2817F7AA001D73A7 /* ViewObjectModel.swift in Sources */,
 				27478CFD2817F697001D73A7 /* BViperInteractor.swift in Sources */,
@@ -734,14 +826,18 @@
 				27478CFC2817F697001D73A7 /* BViperInteractorInterface.swift in Sources */,
 				27494C8C2818A33A004F6851 /* ContentManager.swift in Sources */,
 				275B3BD628194A12001E0FB7 /* ExchangeViperViewInterface.swift in Sources */,
+				27451C8E281A3428002F2CD3 /* ConfirmViperViewController.swift in Sources */,
 				275B3BD328194A12001E0FB7 /* ExchangeViperWireframeInterface.swift in Sources */,
 				275B3BD228194A12001E0FB7 /* ExchangeViperPresenter.swift in Sources */,
 				27478CFF2817F697001D73A7 /* BViperWireframe.swift in Sources */,
 				27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */,
 				27478D172817F781001D73A7 /* MainViperModuleInterface.swift in Sources */,
 				27478D282817F7AA001D73A7 /* ServiceManager.swift in Sources */,
+				27451C8C281A3428002F2CD3 /* ConfirmViperWireframeInterface.swift in Sources */,
 				275B3BB92819333B001E0FB7 /* CurrencyListModel.swift in Sources */,
+				27451C8A281A3428002F2CD3 /* ConfirmViperInteractorInterface.swift in Sources */,
 				27478D192817F781001D73A7 /* MainViperInteractorInterface.swift in Sources */,
+				27451C8D281A3428002F2CD3 /* ConfirmViperWireframe.swift in Sources */,
 				27478D422817FEFC001D73A7 /* EventsEndpointHandler.swift in Sources */,
 				27478CB92817F1A7001D73A7 /* ViewController.swift in Sources */,
 				27478D1A2817F781001D73A7 /* MainViperPresenter.swift in Sources */,
@@ -751,6 +847,7 @@
 				27478D432817FEFC001D73A7 /* URLSessionMock.swift in Sources */,
 				27478D2A2817F7AA001D73A7 /* UIManager.swift in Sources */,
 				27478D292817F7AA001D73A7 /* NavigationManager.swift in Sources */,
+				27451C74281A0094002F2CD3 /* AmountUtils.swift in Sources */,
 				27478D2B2817F7AA001D73A7 /* ResponseBaseModel.swift in Sources */,
 				27451C6F2819CD78002F2CD3 /* AlertTableViewCell.swift in Sources */,
 				275B3BD9281969D3001E0FB7 /* ExchangeComponent.swift in Sources */,
@@ -762,21 +859,24 @@
 				27478D352817F7BA001D73A7 /* TableViewCellModel.swift in Sources */,
 				275B3BD528194A12001E0FB7 /* ExchangeViperViewController.swift in Sources */,
 				27478D1D2817F781001D73A7 /* MainViperViewInterface.swift in Sources */,
+				27451C92281A3492002F2CD3 /* ConfirmComponent.swift in Sources */,
 				27478D402817FEFC001D73A7 /* ApiError.swift in Sources */,
 				275B3BD128194A12001E0FB7 /* ExchangeViperInteractor.swift in Sources */,
 				27494C8A28189DE1004F6851 /* DateUtils.swift in Sources */,
 				27478D342817F7BA001D73A7 /* Constant.swift in Sources */,
-				27494C8F2818BA2B004F6851 /* DefaultCurrencyComponent.swift in Sources */,
 				275B3BCF28194A12001E0FB7 /* ExchangeViperModuleInterface.swift in Sources */,
 				27478D1E2817F781001D73A7 /* MainViperViewController.swift in Sources */,
 				275B3BE82819A17A001E0FB7 /* AlertTableViewController.swift in Sources */,
+				27451C89281A3428002F2CD3 /* ConfirmViperInteractor.swift in Sources */,
 				27478D182817F781001D73A7 /* MainViperInteractor.swift in Sources */,
 				27478D1B2817F781001D73A7 /* MainViperWireframeInterface.swift in Sources */,
 				27478CB52817F1A7001D73A7 /* AppDelegate.swift in Sources */,
 				275B3BB428192C17001E0FB7 /* Enums.swift in Sources */,
 				275B3BD028194A12001E0FB7 /* ExchangeViperInteractorInterface.swift in Sources */,
+				27451C88281A3428002F2CD3 /* ConfirmViperModuleInterface.swift in Sources */,
 				275B3BD428194A12001E0FB7 /* ExchangeViperWireframe.swift in Sources */,
 				27478D002817F697001D73A7 /* BViperWireFrameInterface.swift in Sources */,
+				27451C8F281A3428002F2CD3 /* ConfirmViperViewInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

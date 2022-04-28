@@ -87,9 +87,13 @@ public class ExchangeComponent: BBaseTableViewCell {
             
             finalAmountLabel.text = model.finalAmount
             
-            exchangeButton.setTitle("Excange", for: .normal)
+            exchangeButton.setTitle("Exchange", for: .normal)
             
             mainAmountTextField.delegate = (model.delegate as? UITextFieldDelegate)
+
+            mainAmountTextField.resignFirstResponder()
+           // mainAmountTextField.becomeFirstResponder()
+
         }
     }
     

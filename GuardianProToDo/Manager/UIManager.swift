@@ -1,49 +1,57 @@
 //
 //  UIManager.swift
-//  MeditopiaTask
+//  GuardianProToDo
 //
-//  Created by Alim Yıldız on 3/27/21.
-//  Copyright © 2021 Alim Yıldız. All rights reserved.
+//  Created by Alim Yıldız on 4/27/22.
 //
 
 import UIKit
 
+protocol AlertViewDelegate {
+    func goToConfirmPage()
+}
+
+
 class UIManager: NSObject {
-    public static let instance:UIManager = UIManager()
-    var gl:CAGradientLayer = CAGradientLayer()
-
     
-    func colors(viewBound:CGRect) -> CAGradientLayer {
-
-        let colorTop = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0).cgColor
-        let colorBottom = UIColor(red: 60, green: 77, blue: 135, alpha: 1.0).cgColor
-
-        gl.colors = [colorBottom, colorTop]
-        gl.startPoint = CGPoint(x: 0.5, y: 1.0)
-        gl.endPoint = CGPoint(x: 0.5, y: 0.0)
-        gl.locations = [0, 1]
-        gl.frame = viewBound
+    public static let instance:UIManager = UIManager()
+    
+    var delegate:AlertViewDelegate?
+    
+    func alertView(message:String?,controller:UIViewController) {
         
-        return self.gl
+        let alert = UIAlertController(title: "Warning!", message: message, preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel) {
+                   _ in
+                   print("Cancel Pressed")
+        }
+
+        alert.addAction(cancelAction)
+
+        controller.present(alert, animated: true, completion: nil)
     }
     
-    func alertView(message:String?,controller:UIViewController){
+    func alertViewConfirm(message:String?, controller:UIViewController) {
         
-        let alert = UIAlertController(title: "Alert!", message: "Are you sure want to remove your request?", preferredStyle: .alert)
-                        // Create the actions
-                let okAction = UIAlertAction(title: "YES", style: .destructive) {
-                       _ in
-                       print("Yes Pressed")
-                }
-                let cancelAction = UIAlertAction(title: "CANCEL", style: .cancel) {
-                       _ in
-                       print("Cancel Pressed")
-                    }
-                // Add the actions
-                alert.addAction(okAction)
-                alert.addAction(cancelAction)
+        self.delegate = controller as? AlertViewDelegate
+        
+        let alert = UIAlertController(title: "Warning!", message: message, preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) {
+                   _ in
+                   print("Cancel Pressed")
+        }
+         
+        let confirmAction = UIAlertAction(title: "Confirm", style: .default) {
+           _ in
+            self.delegate?.goToConfirmPage()
+        }
 
-            controller.present(alert, animated: true, completion: nil)
+        alert.addAction(cancelAction)
+        alert.addAction(confirmAction)
+
+        controller.present(alert, animated: true, completion: nil)
     }
     
     func alertTableViewController(selectedData:String? = nil, data: Any?, controller: UIViewController) {

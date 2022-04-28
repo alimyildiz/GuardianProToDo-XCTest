@@ -23,7 +23,11 @@ class MainViperInteractor: BViperInteractor
     func getSupportedCodes(){
         ServiceManager.sharedService.getSupportedCodes { data in
             self.currencyListModel = data
-            self.createComponents()
+            
+            DispatchQueue.main.async {
+                self.createComponents()
+            }
+            
         } failure: { error in
             print("error: \(error)")
         }
