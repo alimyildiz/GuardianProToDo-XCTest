@@ -53,7 +53,4 @@ class ConfirmComponent: BBaseTableViewCell {
     @IBAction func backActionButton(_ sender: Any) {
         self.delegate?.navigationController?.popViewController(animated: true)
     }
-    
-
-    
 }

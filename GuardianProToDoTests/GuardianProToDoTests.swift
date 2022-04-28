@@ -47,8 +47,9 @@ class GuardianProToDoTests: XCTestCase {
     
     func testCurrencyEvents() {
         
+        let currency = "USD"
 
-        ServiceManager.sharedService.getEvents(currency: "USD") { response in
+        ServiceManager.sharedService.getEvents(currency: currency) { response in
 
             self.expectation = self.expectation(description: "currencyEvents")
 
