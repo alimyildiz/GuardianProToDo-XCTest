@@ -54,4 +54,6 @@ class ConfirmComponent: BBaseTableViewCell {
         self.delegate?.navigationController?.popViewController(animated: true)
     }
     
+
+    
 }

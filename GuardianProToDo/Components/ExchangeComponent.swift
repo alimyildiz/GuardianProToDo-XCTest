@@ -92,14 +92,11 @@ public class ExchangeComponent: BBaseTableViewCell {
             
             mainAmountTextField.delegate = (model.delegate as? UITextFieldDelegate)
             mainAmountTextField.text = model.selectedNewCurrencyType! ? nil:mainAmountTextField.text
-           // mainAmountTextField.resignFirstResponder()
-           // mainAmountTextField.endEditing(true)
+            mainAmountTextField.resignFirstResponder()
+            
             if model.selectedNewCurrencyType! {
                 mainAmountTextField.text = nil
-              //  mainAmountTextField.resignFirstResponder()
             }
-
         }
     }
-    
 }

@@ -28,7 +28,7 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
     
     /// Currency Type değiştiğinde bu delegate methodu çalışır...
     func selectedData(exchangeModel: ExchangeModel) {
-        exchangeComponent?.mainAmountTextField.becomeFirstResponder()
+
         exchangeComponent?.mainAmountTextField.text = nil
         (presenter as? ExchangeViperModuleInterface)?.updatedExchangeCurrencyCodeType(exchangeModel: exchangeModel)
     }
@@ -66,6 +66,7 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
         UIManager.instance.alertTableViewController(data: exchangeModel, controller: self)
     }
 
+    /// #TextFieldDelegate methods
     func textFieldDidChangeSelection(_ textField: UITextField) {
         self.selectedTextFielcValue = textField.text
         (presenter as? ExchangeViperModuleInterface)?.conversionRatesCalculate(amount: self.selectedTextFielcValue)
@@ -73,6 +74,15 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.resignFirstResponder()
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        
+        if !textField.text!.isEmpty {
+            textField.resignFirstResponder()
+        }
+
+        return true
     }
 
     func goToConfirmPage() {
