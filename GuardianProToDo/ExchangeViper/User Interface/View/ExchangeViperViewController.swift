@@ -19,10 +19,9 @@ class ExchangeViperViewController: BViperViewController{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Exchange"
+        self.navigationItem.title = BaseConstants.exchangeTitle
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
-
 }
 
 extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeComponentDelegate,UITextFieldDelegate, CustomAlertViewDelegate,AlertViewDelegate {
@@ -34,23 +33,21 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
         (presenter as? ExchangeViperModuleInterface)?.updatedExchangeCurrencyCodeType(exchangeModel: exchangeModel)
     }
     
-    
     func exchangeAction() {
 
-        if self.selectedTextFielcValue != "" && self.selectedTextFielcValue != nil && self.selectedTextFielcValue != "0" {
+        if self.selectedTextFielcValue != "" && self.selectedTextFielcValue != nil && self.selectedTextFielcValue != BaseConstants.zero {
             
             var finalAmount = (self.pageData as? ExchangeModel)
             finalAmount?.selectedText = self.selectedTextFielcValue
             
             self.pageData = finalAmount
             
-            let message = String(format: "Are you about to get %@ for %@ %@ Do you approve the transaction",(finalAmount?.totalCurrency)!,(finalAmount?.mainCurrencyCode)!, (finalAmount?.selectedText)!)
+            let message = String(format: BaseConstants.confirmMessage,(finalAmount?.totalCurrency)!,(finalAmount?.mainCurrencyCode)!, (finalAmount?.selectedText)!)
             
             UIManager.instance.alertViewConfirm(message: message, controller: self)
         }else {
-            UIManager.instance.alertView(message: "Please fill in the required fields", controller: self)
+            UIManager.instance.alertView(message: BaseConstants.warringMessage, controller: self)
         }
-        
     }
     
     func mainCurrencyAction() {

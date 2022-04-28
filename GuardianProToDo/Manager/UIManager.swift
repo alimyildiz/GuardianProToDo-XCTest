@@ -20,11 +20,10 @@ class UIManager: NSObject {
     
     func alertView(message:String?,controller:UIViewController) {
         
-        let alert = UIAlertController(title: "Warning!", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: BaseConstants.warningTitle, message: message, preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: "OK", style: .cancel) {
+        let cancelAction = UIAlertAction(title: BaseConstants.ok, style: .cancel) {
                    _ in
-                   print("Cancel Pressed")
         }
 
         alert.addAction(cancelAction)
@@ -36,14 +35,13 @@ class UIManager: NSObject {
         
         self.delegate = controller as? AlertViewDelegate
         
-        let alert = UIAlertController(title: "Warning!", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: BaseConstants.warningTitle, message: message, preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) {
+        let cancelAction = UIAlertAction(title: BaseConstants.cancel, style: .cancel) {
                    _ in
-                   print("Cancel Pressed")
         }
          
-        let confirmAction = UIAlertAction(title: "Confirm", style: .default) {
+        let confirmAction = UIAlertAction(title: BaseConstants.confirm, style: .default) {
            _ in
             self.delegate?.goToConfirmPage()
         }

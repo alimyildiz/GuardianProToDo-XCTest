@@ -14,7 +14,7 @@ class MainViperViewController: BViperViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Currency List"
+        self.navigationItem.title = BaseConstants.currencyListTitle
     }
     
     /// #Seçilen para birimi ile

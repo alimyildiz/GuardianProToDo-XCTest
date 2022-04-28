@@ -55,10 +55,6 @@
 		27478D342817F7BA001D73A7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D2F2817F7BA001D73A7 /* Constant.swift */; };
 		27478D352817F7BA001D73A7 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D322817F7BA001D73A7 /* TableViewCellModel.swift */; };
 		27478D362817F7BA001D73A7 /* BBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D332817F7BA001D73A7 /* BBaseTableViewCell.swift */; };
-		27478D402817FEFC001D73A7 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D382817FEFC001D73A7 /* ApiError.swift */; };
-		27478D422817FEFC001D73A7 /* EventsEndpointHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */; };
-		27478D432817FEFC001D73A7 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */; };
-		27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */; };
 		27494C8A28189DE1004F6851 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8928189DE1004F6851 /* DateUtils.swift */; };
 		27494C8C2818A33A004F6851 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C8B2818A33A004F6851 /* ContentManager.swift */; };
 		27494C932818C214004F6851 /* CurrencyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27494C912818C214004F6851 /* CurrencyComponent.swift */; };
@@ -150,10 +146,6 @@
 		27478D2F2817F7BA001D73A7 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		27478D322817F7BA001D73A7 /* TableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
 		27478D332817F7BA001D73A7 /* BBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBaseTableViewCell.swift; sourceTree = "<group>"; };
-		27478D382817FEFC001D73A7 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
-		27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsEndpointHandler.swift; sourceTree = "<group>"; };
-		27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
-		27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		27494C8928189DE1004F6851 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		27494C8B2818A33A004F6851 /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		27494C912818C214004F6851 /* CurrencyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyComponent.swift; sourceTree = "<group>"; };
@@ -309,7 +301,6 @@
 				27451C78281A3428002F2CD3 /* ConfirmViper */,
 				275B3BDB28199D09001E0FB7 /* UIController */,
 				27494C8828189D91004F6851 /* Utils */,
-				27478D372817FEFC001D73A7 /* API */,
 				27478D2E2817F7BA001D73A7 /* Common */,
 				27478D302817F7BA001D73A7 /* Components */,
 				27478D1F2817F7AA001D73A7 /* Manager */,
@@ -562,17 +553,6 @@
 				27478D322817F7BA001D73A7 /* TableViewCellModel.swift */,
 			);
 			path = UIModel;
-			sourceTree = "<group>";
-		};
-		27478D372817FEFC001D73A7 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				27478D382817FEFC001D73A7 /* ApiError.swift */,
-				27478D3A2817FEFC001D73A7 /* EventsEndpointHandler.swift */,
-				27478D3B2817FEFC001D73A7 /* URLSessionMock.swift */,
-				27478D3C2817FEFC001D73A7 /* URLSessionDataTaskMock.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		27494C8828189D91004F6851 /* Utils */ = {
@@ -830,7 +810,6 @@
 				275B3BD328194A12001E0FB7 /* ExchangeViperWireframeInterface.swift in Sources */,
 				275B3BD228194A12001E0FB7 /* ExchangeViperPresenter.swift in Sources */,
 				27478CFF2817F697001D73A7 /* BViperWireframe.swift in Sources */,
-				27478D442817FEFC001D73A7 /* URLSessionDataTaskMock.swift in Sources */,
 				27478D172817F781001D73A7 /* MainViperModuleInterface.swift in Sources */,
 				27478D282817F7AA001D73A7 /* ServiceManager.swift in Sources */,
 				27451C8C281A3428002F2CD3 /* ConfirmViperWireframeInterface.swift in Sources */,
@@ -838,13 +817,11 @@
 				27451C8A281A3428002F2CD3 /* ConfirmViperInteractorInterface.swift in Sources */,
 				27478D192817F781001D73A7 /* MainViperInteractorInterface.swift in Sources */,
 				27451C8D281A3428002F2CD3 /* ConfirmViperWireframe.swift in Sources */,
-				27478D422817FEFC001D73A7 /* EventsEndpointHandler.swift in Sources */,
 				27478CB92817F1A7001D73A7 /* ViewController.swift in Sources */,
 				27478D1A2817F781001D73A7 /* MainViperPresenter.swift in Sources */,
 				27478D022817F697001D73A7 /* BViperViewControllerInterface.swift in Sources */,
 				27478CFE2817F697001D73A7 /* BViperPresenter.swift in Sources */,
 				27451C722819D3F7002F2CD3 /* ExchangeModel.swift in Sources */,
-				27478D432817FEFC001D73A7 /* URLSessionMock.swift in Sources */,
 				27478D2A2817F7AA001D73A7 /* UIManager.swift in Sources */,
 				27478D292817F7AA001D73A7 /* NavigationManager.swift in Sources */,
 				27451C74281A0094002F2CD3 /* AmountUtils.swift in Sources */,
@@ -860,7 +837,6 @@
 				275B3BD528194A12001E0FB7 /* ExchangeViperViewController.swift in Sources */,
 				27478D1D2817F781001D73A7 /* MainViperViewInterface.swift in Sources */,
 				27451C92281A3492002F2CD3 /* ConfirmComponent.swift in Sources */,
-				27478D402817FEFC001D73A7 /* ApiError.swift in Sources */,
 				275B3BD128194A12001E0FB7 /* ExchangeViperInteractor.swift in Sources */,
 				27494C8A28189DE1004F6851 /* DateUtils.swift in Sources */,
 				27478D342817F7BA001D73A7 /* Constant.swift in Sources */,

@@ -1,9 +1,8 @@
 //
 //  TableViewCellModel.swift
-//  GetirTodo
+//  GuardianProToDo
 //
-//  Created by Alim Yıldız on 4/16/22.
-//
+//  Created by Alim Yıldız on 4/27/22.
 //
 
 import UIKit

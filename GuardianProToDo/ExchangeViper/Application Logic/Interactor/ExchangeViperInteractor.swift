@@ -80,14 +80,14 @@ extension ExchangeViperInteractor: ExchangeViperInteractorInput {
     /// #Update edilen currency name'lere göre info label güncellenir...
     func updateCurrencyInfo() {
         
-        self.exchangeModel.currencyInfo = "1 " + String(describing: (self.exchangeModel.mainCurrencyCode)!) + " = " + "\((self.exchangeModel.randomConvertCurrencyAmount)!)" + " " + (self.exchangeModel.randomConvertCurrencyCode)!
+        self.exchangeModel.currencyInfo = BaseConstants.defaultAmount + String(describing: (self.exchangeModel.mainCurrencyCode)!) + " = " + "\((self.exchangeModel.randomConvertCurrencyAmount)!)" + " " + (self.exchangeModel.randomConvertCurrencyCode)!
     }
     
     func conversionRatesCalculate(amount: String?) {
         
         let totalCurrency = AmountUtils.instance.conversionRatesWillCalculate(currentAmount: amount, convertedCurrencyName: self.exchangeModel.randomConvertCurrencyCode, convertedCurrencyRate: self.exchangeModel.randomConvertCurrencyAmount)
         
-        self.exchangeModel.finalAmount = "Final Amount: " + totalCurrency
+        self.exchangeModel.finalAmount = BaseConstants.finalAmount + totalCurrency
         self.exchangeModel.totalCurrency = totalCurrency
         self.createComponents()
     }

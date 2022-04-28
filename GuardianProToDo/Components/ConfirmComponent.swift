@@ -42,8 +42,8 @@ class ConfirmComponent: BBaseTableViewCell {
         
         if let model = self.baseObject.viewData as? ConfirmComponentModel {
             
-            self.successLabel.text = "Success"
-            self.backButton.setTitle("Back To Exchange", for: .normal)
+            self.successLabel.text = BaseConstants.success
+            self.backButton.setTitle(BaseConstants.backToExchange, for: .normal)
             self.successIcon.image = UIImage(named: "checkBoxIcon")
             self.infoLabel.text = model.currencyInformation
             self.delegate = model.delegate

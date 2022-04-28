@@ -28,8 +28,6 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
         self.alertTableView.delegate = self
            
         self.registerTableViewCells()
-
-        // Do any additional setup after loading the view.
     }
     
     private func registerTableViewCells() {
@@ -124,24 +122,7 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
     }
     
     @IBAction func onTapOkButton(_ sender: Any) {
-        //alertTextField.resignFirstResponder()
-      //  delegate?.okButtonTapped(selectedOption: selectedOption, textFieldValue: alertTextField.text!)
         self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func onTapSegmentedControl(_ sender: UISegmentedControl) {
-        switch sender.selectedSegmentIndex {
-        case 0:
-            print("First option")
-            //selectedOption = "First"
-            break
-        case 1:
-            print("Second option")
-          //  selectedOption = "Second"
-            break
-        default:
-            break
-        }
     }
 
 }

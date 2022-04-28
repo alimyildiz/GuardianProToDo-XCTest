@@ -1,9 +1,8 @@
 //
 //  ServiceManager.swift
-//  MeditopiaTask
+//  GuardianProToDo
 //
-//  Created by Alim Yıldız on 3/27/21.
-//  Copyright © 2021 Alim Yıldız. All rights reserved.
+//  Created by Alim Yıldız on 4/27/22.
 //
 
 import UIKit
@@ -16,7 +15,6 @@ class ServiceManager: NSObject {
     private let apiEndpoint = "/v6/183032f027c6376ec447ee31/latest/"
     private let apiSupportedCodesEndpoint = "/v6/183032f027c6376ec447ee31/codes"
 
-    
     var responseBaseModel: ResponseBaseModel?
     var currencyListModel: CurrencyListModel?
     var rateData: Data?
@@ -26,8 +24,8 @@ class ServiceManager: NSObject {
     //MARK: Service Get Executer
     func getSupportedCodes(success: @escaping (CurrencyListModel?)->(), failure: @escaping (Error?) -> ()) {
         
-        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: "SupportedCodes") as? Data
-        let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: "LastDate") as? String
+        let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: BaseConstants.supportedCodesKey) as? Data
+        let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: BaseConstants.dateUserDefaultKey) as? String
         
         if dataModel != nil && lastDate != nil {
             
@@ -68,10 +66,10 @@ class ServiceManager: NSObject {
                 self.setSupportedCodeModel(dataModel: rateDataModel)
 
                 // Güncel data set edilir...
-                ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: "SupportedCodes")
+                ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: BaseConstants.supportedCodesKey)
                
                 // Güncel Saat Set edilir...
-                ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: "LastDate")
+                ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: BaseConstants.dateUserDefaultKey)
                 self.completionHandler!()
 
             } else if let error = error {
@@ -86,7 +84,7 @@ class ServiceManager: NSObject {
     func getEvents(currency:String?,success: @escaping (ResponseBaseModel?)->(), failure: @escaping (Error?) -> ()) {
         
         let dataModel = ContentManager.instance.getObjectFromUserDefaults(key: currency!) as? Date
-        let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: "LastDate") as? String
+        let lastDate = ContentManager.instance.getObjectFromUserDefaults(key: BaseConstants.dateUserDefaultKey) as? String
         
         if dataModel != nil && lastDate != nil {
             
@@ -130,7 +128,7 @@ class ServiceManager: NSObject {
                     ContentManager.instance.setObjectInUserDefaults(object: self.rateData, forKey: currency!)
                    
                     // Güncel Saat Set edilir...
-                    ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: "LastDate")
+                    ContentManager.instance.setObjectInUserDefaults(object: DateUtils.instance.getCurrentDate(), forKey: BaseConstants.dateUserDefaultKey)
                     self.completionHandler!()
 
                 } else if let error = error {
@@ -140,7 +138,7 @@ class ServiceManager: NSObject {
             task.resume()
             
         } else {
-            // uyarı verilecek
+            print(" // uyarı  mesajı verilecek........")
         }
     }
     
