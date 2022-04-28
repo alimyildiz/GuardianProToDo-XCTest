@@ -17,5 +17,6 @@ struct ExchangeModel {
     var totalCurrency: String?
     var currencyInfo: String?
     var selectedText: String?
-    var selectedCurrencyTye: Bool? = false
+    var selectedNewCurrencyType: Bool = false
+    var selectedCurrencyType: Bool? = false
 }

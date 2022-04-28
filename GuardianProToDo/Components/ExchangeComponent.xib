@@ -35,7 +35,7 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="USD"/>
+                                <buttonConfiguration key="configuration" style="gray"/>
                                 <connections>
                                     <action selector="mainCurrencyActionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OcD-Vm-mqL"/>
                                 </connections>
@@ -48,7 +48,7 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="EUR"/>
+                                <buttonConfiguration key="configuration" style="gray"/>
                                 <connections>
                                     <action selector="convertedCurrencyActionButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZfR-5h-e0e"/>
                                 </connections>
@@ -83,6 +83,9 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="-1" id="Gmc-jp-CzB"/>
+                                    <outlet property="pasteDelegate" destination="-1" id="IHE-qR-VN0"/>
+                                    <outlet property="textDragDelegate" destination="-1" id="VO4-cy-hDa"/>
+                                    <outlet property="textDropDelegate" destination="-1" id="KgM-to-ubK"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvK-rU-xMf">
@@ -107,7 +110,7 @@
                             <constraint firstItem="nvK-rU-xMf" firstAttribute="leading" secondItem="bDe-cW-4c0" secondAttribute="leading" constant="93" id="kpp-7f-Wfu"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Amount: 3.323" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIr-Mo-BJL">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIr-Mo-BJL">
                         <rect key="frame" x="11" y="167" width="298" height="28"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

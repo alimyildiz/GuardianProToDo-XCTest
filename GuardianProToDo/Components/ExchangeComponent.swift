@@ -20,14 +20,15 @@ struct ExchangeComponentModel {
     var finalAmount: String?
     var currencyInfo: String?
     var delegate: UIViewController?
-
+    var selectedNewCurrencyType: Bool?
     
-    init(mainCurrencyCodeName: String? = nil, convertedCurrencyCodeName: String? = nil, finalAmount: String? = nil, currencyInfo: String? = nil, delegate: UIViewController?) {
+    init(mainCurrencyCodeName: String? = nil, convertedCurrencyCodeName: String? = nil, finalAmount: String? = nil, currencyInfo: String? = nil, selectedNewCurrencyType: Bool? = false, delegate: UIViewController?) {
         self.mainCurrencyCodeName = mainCurrencyCodeName
         self.convertedCurrencyCodeName = convertedCurrencyCodeName
         self.finalAmount = finalAmount
         self.currencyInfo = currencyInfo
         self.delegate = delegate
+        self.selectedNewCurrencyType = selectedNewCurrencyType
     }
 }
 
@@ -90,9 +91,13 @@ public class ExchangeComponent: BBaseTableViewCell {
             exchangeButton.setTitle(BaseConstants.exchange, for: .normal)
             
             mainAmountTextField.delegate = (model.delegate as? UITextFieldDelegate)
-
-            mainAmountTextField.resignFirstResponder()
-           // mainAmountTextField.becomeFirstResponder()
+            mainAmountTextField.text = model.selectedNewCurrencyType! ? nil:mainAmountTextField.text
+           // mainAmountTextField.resignFirstResponder()
+           // mainAmountTextField.endEditing(true)
+            if model.selectedNewCurrencyType! {
+                mainAmountTextField.text = nil
+              //  mainAmountTextField.resignFirstResponder()
+            }
 
         }
     }

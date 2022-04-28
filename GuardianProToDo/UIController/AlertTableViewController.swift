@@ -55,7 +55,7 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
             
             let currencyCode = dataModel?.responseBaseModel?.conversionRatesList[indexPath.row].currencyName
 
-            if (dataModel?.selectedCurrencyTye)! {// main selecteD
+            if (dataModel?.selectedCurrencyType)! {// main selecteD
                 if (dataModel?.responseBaseModel?.conversionRatesList.count)! > 0 {
 
                     if currencyCode == (dataModel?.mainCurrencyCode)! {
@@ -91,7 +91,7 @@ class AlertTableViewController: UIViewController,UITableViewDelegate,UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let currencyCode = dataModel?.responseBaseModel?.conversionRatesList[indexPath.row].currencyName {
-            if (dataModel?.selectedCurrencyTye)! {// main selected
+            if (dataModel?.selectedCurrencyType)! {// main selected
                 dataModel?.mainCurrencyCode = currencyCode
             }else {//converted currency
                 dataModel?.randomConvertCurrencyCode = currencyCode

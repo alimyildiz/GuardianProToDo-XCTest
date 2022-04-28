@@ -53,7 +53,7 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
     func mainCurrencyAction() {
 
         var exchangeModel = self.pageData as? ExchangeModel
-        exchangeModel?.selectedCurrencyTye = true
+        exchangeModel?.selectedCurrencyType = true
         
         UIManager.instance.alertTableViewController(data: exchangeModel, controller: self)
     }
@@ -61,7 +61,7 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
     func convertedCurrencyAction() {
         
         var exchangeModel = self.pageData as? ExchangeModel
-        exchangeModel?.selectedCurrencyTye = false
+        exchangeModel?.selectedCurrencyType = false
         
         UIManager.instance.alertTableViewController(data: exchangeModel, controller: self)
     }
@@ -72,15 +72,9 @@ extension ExchangeViperViewController: ExchangeViperViewInterface,ExchangeCompon
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
+    }
 
-       // self.tableView.reloadData()
-       // textField.endEditing(true)
-        // textField.resignFirstResponder()
-    }
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-    }
-    
     func goToConfirmPage() {
         (presenter as? ExchangeViperModuleInterface)?.goToConfirmPage(exchangeModel: self.pageData as? ExchangeModel)
     }

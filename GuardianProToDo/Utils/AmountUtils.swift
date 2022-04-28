@@ -16,7 +16,7 @@ class AmountUtils: NSObject {
         
         let amount =  currentAmount!.isEmpty ? 0:Int(currentAmount!)
         let currencyRate = Double(convertedCurrencyRate!)
-        let totalCurrency = Double(amount!) * currencyRate!
+        let totalCurrency = Double(amount == nil ? 0:amount!) * currencyRate!
         
         return  currencyFormatting(convertedCurrencyRate: String(describing: totalCurrency), currencyCode: convertedCurrencyName)
     }

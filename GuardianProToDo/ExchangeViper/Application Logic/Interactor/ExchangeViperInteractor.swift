@@ -51,6 +51,7 @@ class ExchangeViperInteractor: BViperInteractor
                                              convertedCurrencyCodeName: self.exchangeModel.randomConvertCurrencyCode,
                                              finalAmount: self.exchangeModel.finalAmount,
                                              currencyInfo: self.exchangeModel.currencyInfo,
+                                             selectedNewCurrencyType: self.exchangeModel.selectedNewCurrencyType,
                                              delegate: self.controller!),
                 data: exchangeModel,
                 parameterName: #keyPath(ExchangeViperViewController.exchangeComponent),
@@ -65,16 +66,17 @@ extension ExchangeViperInteractor: ExchangeViperInteractorInput {
     
     func updatedExchangeCurrencyCodeType(exchangeModel: ExchangeModel?) {
         
+        //Yeni bir seçim yalıpdığında ekran temizlenecek
         self.exchangeModel = exchangeModel!
+        self.exchangeModel.finalAmount = nil
+        self.exchangeModel.selectedNewCurrencyType = true
         
-        if (self.exchangeModel.selectedCurrencyTye)! {
+        if (self.exchangeModel.selectedCurrencyType)! {
             self.getAllEventsMethod(currencyCode: self.exchangeModel.mainCurrencyCode)
         }else {
             self.updateCurrencyInfo()
             self.createComponents()
         }
-
-        self.exchangeModel.finalAmount = nil
     }
     
     /// #Update edilen currency name'lere göre info label güncellenir...
@@ -86,7 +88,8 @@ extension ExchangeViperInteractor: ExchangeViperInteractorInput {
     func conversionRatesCalculate(amount: String?) {
         
         let totalCurrency = AmountUtils.instance.conversionRatesWillCalculate(currentAmount: amount, convertedCurrencyName: self.exchangeModel.randomConvertCurrencyCode, convertedCurrencyRate: self.exchangeModel.randomConvertCurrencyAmount)
-        
+       
+        self.exchangeModel.selectedNewCurrencyType = false
         self.exchangeModel.finalAmount = BaseConstants.finalAmount + totalCurrency
         self.exchangeModel.totalCurrency = totalCurrency
         self.createComponents()
